@@ -55,7 +55,7 @@ def validate(record, path, root):
                     ("%02d局" % board["ju"]) / src["hour"] /
                     {"father":"父亲","mother":"母亲"}.get(src["relationship"], src["relationship"]))
     assert path.parent == expected_dir, (path, "wrong board directory")
-    assert src["relationship"] != "father" or (
+    assert not (src["relationship"] == "father" and src["year"] == "甲子") or (
         lock["patient_symbol"] == "甲" and lock["patient_source_ganzhi"] == "甲子"
         and lock["carrier_stem"] == "戊"
     ), "father 甲子 source must use 甲子→戊 without replacing 甲"
