@@ -1,0 +1,37 @@
+{
+  "schema": "wengua_abstract_father_6000_board_grouping_audit_v1",
+  "input": "father_000001-006000.xlsx",
+  "input_sha256": "52474005292ea39c99151db1788523f9f338dfd964c0e94ad1fc66fb048472cf",
+  "source_branch": "jieqi_a",
+  "relationship": "father",
+  "natal_mode": "none",
+  "records": 6000,
+  "distinct_physical_board_keys_in_this_batch": 900,
+  "theoretical_full_board_key_space": 1080,
+  "distinct_original_full_text_sha256": 1920,
+  "source_original_text_sha_examples": {
+    "case-000001": "657ef2faf4bd22de827d4ce17ae58fae767fa16024165ddc746c7394391851d1",
+    "case-000181": "657ef2faf4bd22de827d4ce17ae58fae767fa16024165ddc746c7394391851d1"
+  },
+  "example_same_board": {
+    "physical_board_key": "yang-08-甲子",
+    "case_serials": [
+      1,
+      181,
+      361,
+      541
+    ],
+    "description": "不同日柱和事实证据的记录仍须独立保存，不能用一篇定稿替代所有案例"
+  },
+  "reviewed_example_cases": [
+    1,
+    2,
+    20,
+    42,
+    181
+  ],
+  "reviewed_example_status": "draft_only_never_approved",
+  "only_local_full_900_groups_manifest": "father_6000_物理盘分组清单.json",
+  "only_local_full_6000_target_path_index": "father_6000_物理盘归档索引.csv",
+  "notes": "900 physical group IDs were computed from uploaded row bureau label and hour Ganzhi. They have not all been independently re-cast or human-approved. source grade 微恙 == 不凶不吉; ignore phrase 势待核 as editorial phrase, keep unknown strength unknown."
+}
