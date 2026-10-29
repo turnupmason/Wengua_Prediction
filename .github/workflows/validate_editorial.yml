@@ -1,0 +1,20 @@
+name: Wengua literary editorial validation
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  validate-editorial:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify all curated draft facts and disallow draft publication
+        run: |
+          python3 -m unittest discover -s tests -v
+          python3 -m py_compile tools/build_offline_catalog.py
+      - name: Build zero-approved local test catalog
+        run: |
+          python3 tools/build_offline_catalog.py --root . --out /tmp/test_readings.sqlite
