@@ -60,5 +60,32 @@ class ReadingContractTests(unittest.TestCase):
         with self.assertRaises(AssertionError):
             validate(sample,FILES[0],ROOT)
 
+
+from plan_board_groups import build_index, plan_path
+
+class BoardGroupPlanningTests(unittest.TestCase):
+    def test_exact_physical_board_path(self):
+        self.assertEqual(
+            plan_path("yang-08-甲子","father",181,"a"),
+            "疾病/病情程度/盘面/阳遁/08局/甲子/父亲/case-000181-jieqi-a.v1.json")
+
+    def test_csv_stages_without_publishing(self):
+        import csv
+        with tempfile.TemporaryDirectory() as td:
+            folder=pathlib.Path(td)
+            csv_path=folder/"demo.csv"
+            with csv_path.open("w",encoding="utf-8-sig",newline="") as fp:
+                w=csv.DictWriter(fp,fieldnames=["序号","年柱","月柱","日柱","时柱","起局甲","节气甲","原等级甲","原文SHA256","原证据SHA"])
+                w.writeheader()
+                w.writerow({"序号":"1","年柱":"甲子","月柱":"丙寅","日柱":"甲子","时柱":"甲子",
+                            "起局甲":"阳8局上元","节气甲":"立春","原等级甲":"极大吉"})
+                w.writerow({"序号":"181","年柱":"甲子","月柱":"丙寅","日柱":"己卯","时柱":"甲子",
+                            "起局甲":"阳8局上元","节气甲":"立春","原等级甲":"极大吉"})
+            manifest=build_index(csv_path,folder/"out")
+            self.assertEqual(manifest["board_keys"],1)
+            self.assertEqual(manifest["records"],2)
+            self.assertEqual(manifest["all_records_status"],"not_approved")
+            self.assertEqual(manifest["group_counts"]["yang-08-甲子"],2)
+
 if __name__=="__main__":
     unittest.main()
