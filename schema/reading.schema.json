@@ -1,0 +1,271 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Wengua curated reading v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "record_id",
+    "physical_chart",
+    "source_context",
+    "fact_lock",
+    "editorial"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "wengua_reading_v1"
+    },
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "physical_chart": {
+      "type": "object",
+      "required": [
+        "key",
+        "direction",
+        "ju",
+        "hour_ganzhi"
+      ],
+      "properties": {
+        "key": {
+          "type": "string"
+        },
+        "direction": {
+          "enum": [
+            "yang",
+            "yin"
+          ]
+        },
+        "ju": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9
+        },
+        "hour_ganzhi": {
+          "type": "string"
+        }
+      }
+    },
+    "source_context": {
+      "type": "object",
+      "required": [
+        "scenario_id",
+        "year",
+        "month",
+        "day",
+        "hour",
+        "solar_term",
+        "solar_term_branch",
+        "relationship",
+        "consultation_context",
+        "natal_mode",
+        "abstract_scenario"
+      ],
+      "properties": {
+        "scenario_id": {
+          "type": "integer"
+        },
+        "year": {
+          "type": "string"
+        },
+        "month": {
+          "type": "string"
+        },
+        "day": {
+          "type": "string"
+        },
+        "hour": {
+          "type": "string"
+        },
+        "solar_term": {
+          "type": "string"
+        },
+        "solar_term_branch": {
+          "enum": [
+            "a",
+            "b"
+          ]
+        },
+        "relationship": {
+          "type": "string"
+        },
+        "consultation_context": {
+          "type": "string"
+        },
+        "natal_mode": {
+          "enum": [
+            "none",
+            "provided"
+          ]
+        },
+        "abstract_scenario": {
+          "type": "boolean"
+        }
+      }
+    },
+    "fact_lock": {
+      "type": "object",
+      "required": [
+        "original_text_sha256",
+        "original_evidence_sha256",
+        "grade",
+        "score",
+        "patient_symbol",
+        "patient_source_ganzhi",
+        "carrier_stem",
+        "patient_palace",
+        "rule_engine_source"
+      ],
+      "properties": {
+        "original_text_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "original_evidence_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "grade": {
+          "type": "string"
+        },
+        "score": {
+          "type": "integer"
+        },
+        "patient_symbol": {
+          "type": "string"
+        },
+        "patient_source_ganzhi": {
+          "type": "string"
+        },
+        "carrier_stem": {
+          "type": "string"
+        },
+        "patient_palace": {
+          "type": "integer"
+        },
+        "rule_engine_source": {
+          "type": "string"
+        },
+        "source_fact_issue": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "editorial": {
+      "type": "object",
+      "required": [
+        "version",
+        "status",
+        "human_approved",
+        "front_screen",
+        "professional_sections",
+        "note"
+      ],
+      "properties": {
+        "version": {
+          "type": "integer"
+        },
+        "status": {
+          "enum": [
+            "draft",
+            "fact_checked",
+            "reviewed",
+            "approved",
+            "rejected"
+          ]
+        },
+        "human_approved": {
+          "type": "boolean"
+        },
+        "front_screen": {
+          "type": "object",
+          "required": [
+            "banner",
+            "title",
+            "text"
+          ],
+          "properties": {
+            "banner": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "text": {
+              "type": "string"
+            }
+          }
+        },
+        "professional_sections": {
+          "type": "object",
+          "required": [
+            "macro",
+            "illness",
+            "doctor",
+            "medicine",
+            "patient",
+            "hour",
+            "chief",
+            "gender",
+            "verdict",
+            "timing"
+          ],
+          "properties": {
+            "macro": {
+              "type": "string",
+              "minLength": 10
+            },
+            "illness": {
+              "type": "string",
+              "minLength": 10
+            },
+            "doctor": {
+              "type": "string",
+              "minLength": 10
+            },
+            "medicine": {
+              "type": "string",
+              "minLength": 10
+            },
+            "patient": {
+              "type": "string",
+              "minLength": 10
+            },
+            "hour": {
+              "type": "string",
+              "minLength": 10
+            },
+            "chief": {
+              "type": "string",
+              "minLength": 10
+            },
+            "gender": {
+              "type": "string",
+              "minLength": 10
+            },
+            "verdict": {
+              "type": "string",
+              "minLength": 10
+            },
+            "timing": {
+              "type": "string",
+              "minLength": 10
+            }
+          }
+        },
+        "note": {
+          "type": "string"
+        },
+        "reviewer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}
