@@ -1,0 +1,59 @@
+{
+  "schema_version": "wengua_reading_v1",
+  "record_id": "father-000001-jieqi-a-v1",
+  "physical_chart": {
+    "key": "yang-08-甲子",
+    "direction": "yang",
+    "ju": 8,
+    "hour_ganzhi": "甲子"
+  },
+  "source_context": {
+    "scenario_id": 1,
+    "year": "甲子",
+    "month": "丙寅",
+    "day": "甲子",
+    "hour": "甲子",
+    "solar_term": "立春",
+    "solar_term_branch": "a",
+    "relationship": "father",
+    "consultation_context": "direct_proxy",
+    "natal_mode": "none",
+    "abstract_scenario": true
+  },
+  "fact_lock": {
+    "original_text_sha256": "657ef2faf4bd22de827d4ce17ae58fae767fa16024165ddc746c7394391851d1",
+    "original_evidence_sha256": "16ddb33de2fd9339b9b54bbef57b89216c9629495bebc8f9dfa338f6db43acfb",
+    "grade": "极大吉",
+    "score": 5,
+    "patient_symbol": "甲",
+    "patient_source_ganzhi": "甲子",
+    "carrier_stem": "戊",
+    "patient_palace": 8,
+    "rule_engine_source": "BigFish TS / Wengua frozen V8.0+V10.2; source requires independent recast verification",
+    "source_fact_issue": []
+  },
+  "editorial": {
+    "version": 1,
+    "status": "draft",
+    "human_approved": false,
+    "front_screen": {
+      "banner": "吉局",
+      "title": "极大吉：沉疴顿愈",
+      "text": "这盘问父亲病情，不能只看病宫见白虎、死门就断得凶。天芮虽在坤二宫显出病象，父亲用神却居艮八，生门与值符同临，人的承受一面明显比病象所示的环境有利。医药两宫尚未形成明确的直接制病之势，故不宜把吉局说成用药即见效。天显与伏吟同在，吉中带缓：本局按原判取上吉，过程却未必迅速，也不能据此定痊愈日期。"
+    },
+    "professional_sections": {
+      "macro": "此时不犯五不遇，天显虽有助势，却与伏吟并见；吉意仍在，行事节奏偏缓，不能把助力理解为立刻见效。",
+      "illness": "天芮居坤二，与死门、白虎同处，病象不可轻忽。坤宫承中五寄干，两组天地格为辛加辛「伏吟天庭」与丁加丁「奇入太阴」，一凶一吉，正是此宫不能单从一格论断的原因；病宫不空。",
+      "doctor": "天心在乾六，开门虽有可取之象，但此宫见真空，天、地盘干均入墓，求医之助受限制。乾六受病宫所生，不属于直接克制病宫的证据。",
+      "medicine": "乙奇在兑七，与惊门、玄武同宫，乙加乙「日奇伏吟」仍需参看。此宫受病宫所生，不能写成医药已将病势压住。",
+      "patient": "问父亲取问测年干甲，年柱甲子以遁戊寻找实际天盘携仪，主用神定位艮八，不是以问测时干代替。艮八得生门与值符，病人自身有支撑；与坤宫比和，同宫分数不可重复，亦不凭比和断成绝对有力。",
+      "hour": "本局时干甲与父亲主用神同宫，事体与患者并参艮八一宫，不能把它们当两个不同宫位的助力累加。",
+      "chief": "值符与父亲主用神同在艮八，是本局有利条件之一；它和病宫为比和关系，并非跨宫制病。",
+      "gender": "父亲属男长辈，乾六另作辅助；此宫与天心同处，真空及入墓既已说明，不额外重复记分，也不把乾六误认成父亲主用神。",
+      "verdict": "此局病宫见不利门神，医药的直接制病证据亦有限；但父亲主用神获生门、值符扶持，合局仍按冻结结果取极大吉。其吉在病人可持、局势有助，不等于现实病情已确诊好转。",
+      "timing": "伏吟主慢，天显与伏吟同现仍有助势但难言速应。驿马在寅；具体应期要再核空、墓、冲合触发，现有抽象四柱不能定日。"
+    },
+    "note": "真人断案风格示范；源证据已据上传Excel字段和原十章节人工对照，但未独立重新起盘复算，必须维持draft。",
+    "reviewer": null
+  }
+}
