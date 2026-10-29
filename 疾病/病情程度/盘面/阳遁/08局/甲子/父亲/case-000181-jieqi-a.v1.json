@@ -1,0 +1,59 @@
+{
+  "schema_version": "wengua_reading_v1",
+  "record_id": "father-000181-jieqi-a-v1",
+  "physical_chart": {
+    "key": "yang-08-甲子",
+    "direction": "yang",
+    "ju": 8,
+    "hour_ganzhi": "甲子"
+  },
+  "source_context": {
+    "scenario_id": 181,
+    "year": "甲子",
+    "month": "丙寅",
+    "day": "己卯",
+    "hour": "甲子",
+    "solar_term": "立春",
+    "solar_term_branch": "a",
+    "relationship": "father",
+    "consultation_context": "direct_proxy",
+    "natal_mode": "none",
+    "abstract_scenario": true
+  },
+  "fact_lock": {
+    "original_text_sha256": "657ef2faf4bd22de827d4ce17ae58fae767fa16024165ddc746c7394391851d1",
+    "original_evidence_sha256": "71a76345b39c318dcc89174f35cbbabb5092a7e8bf3f026ad8adc0a962177e13",
+    "grade": "极大吉",
+    "score": 5,
+    "patient_symbol": "甲",
+    "patient_source_ganzhi": "甲子",
+    "carrier_stem": "戊",
+    "patient_palace": 8,
+    "rule_engine_source": "BigFish TS / Wengua frozen V8.0+V10.2; source requires independent recast verification",
+    "source_fact_issue": []
+  },
+  "editorial": {
+    "version": 1,
+    "status": "draft",
+    "human_approved": false,
+    "front_screen": {
+      "banner": "吉局",
+      "title": "极大吉：沉疴顿愈",
+      "text": "论这一时局，最值得看的并非病宫一个“凶”字，而是病与人各处什么境地。坤宫天芮临死门、白虎，说明病象中确有阻碍；艮宫却是父亲用神所在，生门与值符同守，给全局留下了相当明确的转圜条件。医药虽未显示直接攻克病宫，尚不能据此断药到病除。又逢伏吟，宜作有利而缓进之象，不作骤然痊愈之说。"
+    },
+    "professional_sections": {
+      "macro": "全局有天显之助，却又遇伏吟，重在渐进，不是立见高下。本时不犯五不遇。",
+      "illness": "坤二为病宫，天芮与死门、白虎聚于此，须承认病象不利；中五寄坤，使辛加辛「伏吟天庭」及丁加丁「奇入太阴」两格并存，不能只取凶格或只取吉格。",
+      "doctor": "天心落乾六，虽见开门，但此宫真空，天地盘均入墓；病宫与医宫是生的方向，并非医生已经克住病象。",
+      "medicine": "乙奇落兑七，惊门玄武与「日奇伏吟」同参，医药之宫缺少直接制服病宫的依据；不能因全局为吉就补写“药已对症”。",
+      "patient": "以父亲问测年甲为本。年甲子独立遁戊寻携干宫，艮八得生门和值符，代表受问者一端仍有承托；其宫与坤二比和，但比和不意味着两边实际力量完全相同。",
+      "hour": "时干甲仍在艮八，与父亲主用神是同一宫位的事实，不另加一重吉助。",
+      "chief": "值符守艮八、靠近父亲用神所处环境，是合局偏吉的重要根据；它不构成另一个跨宫攻病动作。",
+      "gender": "乾六作父亲辅助，亦与天心同宫；此宫真空并入墓，助力受到条件限制，不能越过主用神独立断案。",
+      "verdict": "病象有凶，医药不宜说得过满；但父亲所在的艮宫有生门与值符，吉证能够抵住部分不利因素。冻结原案归极大吉，文字仅解释其由来，不改结论。",
+      "timing": "伏吟使节奏偏慢，天显并不能抹去这种迟滞。驿马在寅，尚无足够空墓冲合应期事实断具体日期。"
+    },
+    "note": "同一物理盘下的不同日柱独立案例。经原文对照，两条原始十章相同、原等级相同；本稿换了论述重点，但不虚构两案实质差异。draft。",
+    "reviewer": null
+  }
+}
