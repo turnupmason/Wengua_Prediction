@@ -1,0 +1,59 @@
+{
+  "schema_version": "wengua_reading_v1",
+  "record_id": "father-000042-jieqi-a-v1",
+  "physical_chart": {
+    "key": "yang-08-乙巳",
+    "direction": "yang",
+    "ju": 8,
+    "hour_ganzhi": "乙巳"
+  },
+  "source_context": {
+    "scenario_id": 42,
+    "year": "甲子",
+    "month": "丙寅",
+    "day": "丁卯",
+    "hour": "乙巳",
+    "solar_term": "立春",
+    "solar_term_branch": "a",
+    "relationship": "father",
+    "consultation_context": "direct_proxy",
+    "natal_mode": "none",
+    "abstract_scenario": true
+  },
+  "fact_lock": {
+    "original_text_sha256": "a46fe73769ac67144a6386606cae70bbdbadd0befffb701a96b91025829a9b49",
+    "original_evidence_sha256": "0951ea9749cfc55109e914afe44aee5bdbd4cc2c67dcc9f3354e9e6d60fa7a11",
+    "grade": "微恙",
+    "score": 0,
+    "patient_symbol": "甲",
+    "patient_source_ganzhi": "甲子",
+    "carrier_stem": "戊",
+    "patient_palace": 2,
+    "rule_engine_source": "BigFish TS / Wengua V8.0 V10.2 uploaded abstract branch, not independently recast",
+    "source_fact_issue": []
+  },
+  "editorial": {
+    "version": 1,
+    "status": "draft",
+    "human_approved": false,
+    "front_screen": {
+      "banner": "吉局",
+      "title": "微恙：病势平缓",
+      "text": "此局不以大凶论，也不宜说成病势已经尽退。天芮在艮宫，虽有入墓、门迫等不顺，却同时逢真空，病象的表现与牵制须合看。父亲用神居坤二，有可凭借的宫中条件；天心和乙奇都有制病的五行方向，但实际效力尚不能单凭相克二字定论。因此原局归于平和，不凶不吉。反吟提醒事态可能变化较快，真正应期仍须核空墓冲合，不可随意定某日痊愈。"
+    },
+    "professional_sections": {
+      "macro": "此局不犯五不遇而见反吟，按古法变化趋快；快慢只是时局特征，不等于现实症状必在短期发生。",
+      "illness": "天芮在艮八，与休门、六合同宫；辛加戊「困龙被伤」和丁加戊「青龙转光」一凶一吉并存。同时见真空、天盘入墓、门迫，几项条件相互牵制，不能只挑一个凶格做断语。",
+      "doctor": "天心在巽四，见伤门与丙加癸「华盖孛师」，医宫并非全无阻力。巽宫对艮宫虽有相克方向，但真正施力尚待原始源强综合确认，不能写成治疗已经稳稳见效。",
+      "medicine": "乙奇在震三，遇生门与「日奇入地」，同时有假空和门迫；震与艮存在五行相克方向，但并非据此即可判医药已经压病。",
+      "patient": "问父亲取问测年柱甲子之甲，用甲子遁戊定位坤二。坤二见天任、景门、九天，戊加辛「青龙折足」与戊加丁「青龙耀明」两格并参；其宫和艮八比和，既不虚造跨宫克制，也不把比和直接当作等力。",
+      "hour": "本时乙巳，时干乙与乙奇同居震三；时干是事体旁证，不取代父亲的年干甲，也不能将同一震宫重复算作两份力量。",
+      "chief": "值符在兑七，与死门及壬加乙「小蛇」同在。本宫与病宫为病宫生本宫的方向，不属于直接反向克病。",
+      "gender": "父亲另看乾六，见惊门、螣蛇、地盘入墓及驿马，有阻滞之象；辅助宫不应夺去坤二主用神的判断位置。",
+      "verdict": "病宫一面有真空，一面有墓迫，医药虽有相克方向但有效性不足以写成已制病，父亲本宫亦有吉凶两格。按冻结原分归零分「微恙」，也就是「不凶不吉」，不属于不同判断。",
+      "timing": "此局反吟，变化节奏较快，驿马在亥；但未核完空墓冲合触发，不据抽象节气组合定现实日期。"
+    },
+    "note": "专门验证微恙=不凶不吉的中性文字，不再把二者视为冲突；草稿未人工审批。",
+    "reviewer": null
+  }
+}
