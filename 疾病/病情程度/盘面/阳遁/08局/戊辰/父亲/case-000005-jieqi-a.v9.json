@@ -1,0 +1,90 @@
+{
+  "schema_version": "wengua_reading_v1",
+  "record_id": "father-000005-jieqi-a-v9",
+  "physical_chart": {
+    "key": "yang-08-戊辰",
+    "direction": "yang",
+    "ju": 8,
+    "hour_ganzhi": "戊辰"
+  },
+  "source_context": {
+    "scenario_id": 5,
+    "year": "甲子",
+    "month": "丙寅",
+    "day": "甲子",
+    "hour": "戊辰",
+    "solar_term": "立春",
+    "solar_term_branch": "a",
+    "relationship": "father",
+    "consultation_context": "direct_proxy",
+    "natal_mode": "none",
+    "abstract_scenario": true
+  },
+  "fact_lock": {
+    "original_text_sha256": "744d481b8e89c48d5ce9983b1bb0babd856dd7078d3a0f10050b241a390a5c6c",
+    "original_evidence_sha256": "17b1fde62b3e7a0205d4f0e4a260ff60c8e28d5daab364d6de90dac13f5c64ea",
+    "physical_board_sha256": "5e5bc0e90699f0d16e9f19ec5464fa333c3efc9ce50888fe177e020d16af2bd6",
+    "grade": "中吉",
+    "score": 3,
+    "patient_symbol": "甲",
+    "patient_source_ganzhi": "甲子",
+    "carrier_stem": "戊",
+    "patient_palace": 8,
+    "rule_engine_source": "BigFish raw 1080 physical board + original frozen V8 result; V8 200-table math not rerun",
+    "source_fact_issue": []
+  },
+  "editorial": {
+    "version": 9,
+    "status": "draft",
+    "human_approved": false,
+    "front_screen": {
+      "banner": "吉局",
+      "title": "中吉：身心渐安",
+      "text": "父亲的病情整体有望朝较安稳的方向发展，但并非所有环节都顺利。父亲自身仍能得到扶持，疾病所在之处也有缓和条件，这是本局向好的主要依据；求医与用药受到的限制则不能忽略。\n\n父亲所在的位置有帮助他维持自身处境的因素，但同时出现通路不顺。说明不是没有支撑，只是这份帮助未必能毫无阻碍地发挥。他与疾病所在的位置也没有直接压制关系，不能把有利条件说成病已经受控。\n\n疾病这一端有较明显的干扰，内部还呈现有利与不利并存的情况。值得注意的是，其中存在能够缓和病势的因素，因此有阻力不等于全无转机。判断时既不能夸大不利，也不能抹掉病宫的扶助。\n\n医生所处的位置出现力量落空、难以伸展的迹象，求医帮助受到限制；药物一端则偏于停滞，没有形成直接克制病势的关系。整体向好，不是医药已经确定见效的证明。\n\n当前事情的发展与父亲同在一个位置，反映父亲本身的处境，并不另添一份帮助。男性长辈的辅助位置恰与医生相同，所受限制是同一组事实，不能重复计成两处不利或两处助力。\n\n综合来看，父亲仍有扶持，疾病也有缓和余地，整体属于较稳的向好倾向；只是医药条件不够有力，恢复过程可能较慢，不能凭这一盘确定具体康复时间。"
+    },
+    "professional_sections": {
+      "macro": "立春甲候选，甲子日戊辰时，不犯五不遇。伏吟主慢，吉象不可简单写成即时见效。",
+      "illness": "天芮居坤二，景门、白虎同在，中五寄坤形成两组天地格一吉一凶，并有丁奇相扶；病势有扰，不可只看一面。",
+      "patient": "父亲年甲按甲子遁戊定位艮八，休门、值符同在，有持守扶助但门受迫。艮土与坤土比和，不代表患者已克病。",
+      "doctor": "天心在乾六，临惊门、九地，真空且天地干双墓，求医助力受限；坤土生乾金，非天心主动克病。",
+      "medicine": "乙奇在兑七，临死门、玄武，医药一端见阻滞；坤土生兑金，并非乙奇主动制病。",
+      "hour": "时干戊与父亲年甲同在艮八，事体和患者同宫，可合断但同一宫基础只计一次。",
+      "chief": "值符与父亲在艮八，扶持归此一宫；休门受迫限制作用，不能另算一股独立宫分。",
+      "gender": "乾六长辈辅宫恰与天心医生同处，真空双墓等限制是同一宫况，不得叠算。",
+      "verdict": "父亲艮八有值符扶助，病宫坤二有丁奇缓和；虽白虎扰动、医药受限，合冻结评分仍为中吉。",
+      "timing": "伏吟主慢，驿马在寅，但具体何时应验尚缺冲合依据，不能断现实恢复日期。"
+    },
+    "professional_section_titles": {
+      "macro": "时局与变化节奏",
+      "illness": "疾病本身的阻碍",
+      "patient": "父亲自身的处境",
+      "doctor": "医生与求医条件",
+      "medicine": "药物能起多大作用",
+      "hour": "当前事情的发展",
+      "chief": "父亲得到的扶持",
+      "gender": "男性长辈的辅助判断",
+      "verdict": "综合判断",
+      "timing": "好转时间与条件"
+    },
+    "note": "按用户已确认文风逐案重写，历史v7仅作事实锁来源；未复算冻结200格源力，保持draft且未获iOS批准。",
+    "reviewer": null
+  },
+  "source_provenance": {
+    "raw_record_id": "father-000005-jieqi-a",
+    "original_full_reading_sha256": "744d481b8e89c48d5ce9983b1bb0babd856dd7078d3a0f10050b241a390a5c6c",
+    "source_facts_sha256": "17b1fde62b3e7a0205d4f0e4a260ff60c8e28d5daab364d6de90dac13f5c64ea",
+    "physical_sha256": "5e5bc0e90699f0d16e9f19ec5464fa333c3efc9ce50888fe177e020d16af2bd6",
+    "term_only": "甲",
+    "source_v8_recomputed": false,
+    "labels_checked_against_original": true,
+    "explicit_original_roles": {
+      "illness": 2,
+      "doctor": 6,
+      "medicine": 7,
+      "patient": 8,
+      "chief": 8,
+      "gender": 6
+    },
+    "source_sections_sha256": "df0e11de13f62786131b51edbe32d7f637446c00e8a72c5b8d5577b614992414"
+  }
+}
