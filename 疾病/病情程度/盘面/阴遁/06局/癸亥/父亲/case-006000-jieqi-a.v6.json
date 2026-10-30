@@ -1,0 +1,79 @@
+{
+  "schema_version": "wengua_reading_v1",
+  "record_id": "father-006000-jieqi-a-v6",
+  "physical_chart": {
+    "key": "yin-06-癸亥",
+    "direction": "yin",
+    "ju": 6,
+    "hour_ganzhi": "癸亥"
+  },
+  "source_context": {
+    "scenario_id": 6000,
+    "year": "甲子",
+    "month": "甲戌",
+    "day": "癸未",
+    "hour": "癸亥",
+    "solar_term": "寒露",
+    "solar_term_branch": "a",
+    "relationship": "father",
+    "consultation_context": "direct_proxy",
+    "natal_mode": "none",
+    "abstract_scenario": true
+  },
+  "fact_lock": {
+    "original_text_sha256": "ebad6f3247f2f357bf39d551a7694195f6b33b9bb5ec1b8a0ecd1d638894dcae",
+    "original_evidence_sha256": "f7212338d6923d6603370bd491a7b4278c6807f7058ae50ef8a2e4121106038e",
+    "physical_board_sha256": "fc80b8b4f9b1231b91eabf9411397aa91d48e2b1733ee0d69c5e8f5c6e8361b6",
+    "grade": "极大凶",
+    "score": -5,
+    "patient_symbol": "甲",
+    "patient_source_ganzhi": "甲子",
+    "carrier_stem": "戊",
+    "patient_palace": 6,
+    "rule_engine_source": "BigFish raw 1080 physical board + original frozen V8 result; V8 200-table math not rerun",
+    "source_fact_issue": []
+  },
+  "editorial": {
+    "version": 6,
+    "status": "draft",
+    "human_approved": false,
+    "front_screen": {
+      "banner": "凶局",
+      "title": "极大凶：命悬一线",
+      "text": "坤二病宫死门、击刑与两重凶格集中，病象阻滞较重。父亲年甲与天心同在乾六，开门虽有求医之路，天地盘入墓使助力受限。乙奇兑七见惊门，值符坎一又逢真空，医药与护持未成合力。伏吟主慢，病势难言速解。"
+    },
+    "professional_sections": {
+      "macro": "癸未日癸亥时，不犯五不遇。伏吟主慢，事情易拖延。",
+      "illness": "天芮在坤二，死门与击刑同见，壬加壬、己加己两格均凶；中五寄干与坤二同参。",
+      "patient": "父亲用问测年甲子遁戊，落乾六，与天心同宫。开门可取，戊加戊伏吟、天地盘入墓使患者一方受限。甲自身源力未核清，不补作强弱判断。",
+      "doctor": "天心与父亲同在乾六，开门利求医，天地盘入墓又使通路受阻。坤土生乾金，不是天心主动制病。",
+      "medicine": "乙奇在兑七，惊门、乙加乙伏吟同见。病宫生兑宫，未形成乙奇反向制病。",
+      "hour": "癸亥时干在坎一，与值符同宫，真空及天网格同时制约事体。",
+      "chief": "值符在坎一逢真空，护持受限，与时干共用一宫。",
+      "gender": "乾六既是父亲主用神所在，又是男长辈辅宫，开门与双墓只计一次。",
+      "verdict": "病宫死门、击刑与双凶格集中，父亲和天心同宫受墓，乙奇不直接制病，值符又真空。原局取极大凶，不能从开门一项推成好转。",
+      "timing": "伏吟主慢，驿马在巳。未见足够空墓冲合触发依据，不定日。"
+    },
+    "note": "用户否决v5套话后，按真实证据重新精简编写；不改原V8/原盘事实；独立计分未重跑；未经人工批准，不入iOS。",
+    "reviewer": null,
+    "previous_version_rejected": "v5"
+  },
+  "source_provenance": {
+    "raw_record_id": "father-006000-jieqi-a",
+    "original_full_reading_sha256": "ebad6f3247f2f357bf39d551a7694195f6b33b9bb5ec1b8a0ecd1d638894dcae",
+    "source_facts_sha256": "f7212338d6923d6603370bd491a7b4278c6807f7058ae50ef8a2e4121106038e",
+    "physical_sha256": "fc80b8b4f9b1231b91eabf9411397aa91d48e2b1733ee0d69c5e8f5c6e8361b6",
+    "term_only": "甲",
+    "source_v8_recomputed": false,
+    "labels_checked_against_original": true,
+    "explicit_original_roles": {
+      "illness": 2,
+      "doctor": 6,
+      "medicine": 7,
+      "patient": 6,
+      "chief": 1,
+      "gender": 6
+    },
+    "source_sections_sha256": "fbb1df9d1ff6f0919dc498a0d333aa6d5d7cf41aaa91b43d14aab2560dd5dc8c"
+  }
+}
