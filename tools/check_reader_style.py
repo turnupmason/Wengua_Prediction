@@ -12,6 +12,8 @@ BAD=("生门","死门","值符","天芮","丁奇","白虎","天心","乙奇","�
      "取吉","冻结结果","源力量","势待核","首先","其次","综上所述",
      "此局偏吉","先看病的这一头","代表病情的部分")
 
+ACCOUNTING = ("重复记分","重复计分","计分","宫分","评分","分数","加分","叠分","重复计算","重复算","重复加力","只计一次","只算一次","冻判","冻结","score","源强","源力量")
+
 def run():
     assert not (ROOT/"staging").exists(),"obsolete staging must be removed"
     paths=sorted(BOARD.rglob("case-*.json"))
@@ -31,6 +33,8 @@ def run():
         assert not any(term in front for term in BAD),(path,"jargon/filler")
         assert "？" not in front and "?" not in front
         assert "病情" in front and "医生" in front and "药物" in front
+        visible = front + "\\n" + "\\n".join(e["professional_sections"].values())
+        assert not any(term in visible for term in ACCOUNTING), ("internal computation leaked to reader", path)
         assert len(r["fact_lock"]["original_evidence_sha256"])==64
         assert len(r["fact_lock"]["original_text_sha256"])==64
         assert r["record_id"] not in ids
