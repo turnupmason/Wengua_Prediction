@@ -30,7 +30,8 @@
     "carrier_stem": "戊",
     "patient_palace": 9,
     "rule_engine_source": "BigFish actual 1080 JSON and uploaded Father.zip frozen V8; calculations unchanged",
-    "source_fact_issue": []
+    "source_fact_issue": [],
+    "physical_board_sha256": "1381a72231710d2a1b466b933bd2fd30b7c453522df68c4b45053a31f14443b9"
   },
   "editorial": {
     "version": 9,
@@ -76,6 +77,7 @@
     "term_only": "甲",
     "source_v8_recomputed": false,
     "labels_checked_against_original": true,
-    "source_workbook": "father_000001-006000.xlsx"
+    "source_workbook": "father_000001-006000.xlsx",
+    "physical_sha256": "1381a72231710d2a1b466b933bd2fd30b7c453522df68c4b45053a31f14443b9"
   }
 }
