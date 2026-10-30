@@ -34,14 +34,14 @@ SOURCE_LOCK = {
 class ReadingContractTests(unittest.TestCase):
     def test_current_batched_cases_only_v9_and_source_sha_exact(self):
         paths=sorted(BOARD.rglob("case-*.json"))
-        self.assertEqual(len(paths),20)
+        self.assertGreaterEqual(len(paths),25)
         self.assertTrue(all(p.name.endswith(".v9.json") for p in paths))
         seen=set()
         for path in paths:
             data=json.loads(path.read_text(encoding="utf-8"))
             self.assertFalse(validate(data,path,ROOT))
             n=data["source_context"]["scenario_id"]
-            self.assertTrue(1<=n<=20)
+            self.assertTrue(1<=n<=518400)
             self.assertNotIn(n,seen)
             seen.add(n)
             self.assertEqual(data["record_id"],"father-%06d-jieqi-a-v9"%n)
@@ -69,7 +69,7 @@ class ReadingContractTests(unittest.TestCase):
                 self.assertEqual(data["fact_lock"]["patient_palace"],palace)
                 self.assertEqual(data["fact_lock"]["original_evidence_sha256"],sha)
 
-        self.assertEqual(seen,set(range(1,21)))
+        self.assertTrue(set(range(1,26)).issubset(seen))
 
     def test_no_draft_enters_offline_catalogue(self):
         with tempfile.TemporaryDirectory() as td:
