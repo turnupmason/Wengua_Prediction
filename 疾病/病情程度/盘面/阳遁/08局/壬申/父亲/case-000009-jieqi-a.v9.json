@@ -1,0 +1,90 @@
+{
+  "schema_version": "wengua_reading_v1",
+  "record_id": "father-000009-jieqi-a-v9",
+  "physical_chart": {
+    "key": "yang-08-壬申",
+    "direction": "yang",
+    "ju": 8,
+    "hour_ganzhi": "壬申"
+  },
+  "source_context": {
+    "scenario_id": 9,
+    "year": "甲子",
+    "month": "丙寅",
+    "day": "甲子",
+    "hour": "壬申",
+    "solar_term": "立春",
+    "solar_term_branch": "a",
+    "relationship": "father",
+    "consultation_context": "direct_proxy",
+    "natal_mode": "none",
+    "abstract_scenario": true
+  },
+  "fact_lock": {
+    "original_text_sha256": "be5532b3f889ad5b8dec0d43fe6e8b791be4fa2a8b47d1b929dd3a4fc7a16bb5",
+    "original_evidence_sha256": "a1f2bee4a5d2863f998065e2e6e83e43b2b8faf4e3f26d099fb5da84fa8cf175",
+    "physical_board_sha256": "0eaff9df1432619a3d2936c01f30f79435503b1d114612454c0968929ac9630d",
+    "grade": "极大凶",
+    "score": -5,
+    "patient_symbol": "甲",
+    "patient_source_ganzhi": "甲子",
+    "carrier_stem": "戊",
+    "patient_palace": 3,
+    "rule_engine_source": "BigFish raw 1080 physical board + original frozen V8 result; V8 200-table math not rerun",
+    "source_fact_issue": []
+  },
+  "editorial": {
+    "version": 9,
+    "status": "draft",
+    "human_approved": false,
+    "front_screen": {
+      "banner": "凶局",
+      "title": "极大凶：命悬一线",
+      "text": "父亲这一局的病情虽能看到一些缓和条件，整体判断仍然十分不利。关键不在于疾病那一处是否出现好象，而在于父亲自身正受病势压制，而且帮助他的几条线索并不能直接扭转这种关系。\n\n父亲所在的位置有重要扶持，却同时出现受损和内部不安稳的迹象。更不利的是，疾病所在的一边能够克制父亲，说明他自身承受的压力相当突出。单看有扶持，便会忽略这一层主要矛盾。\n\n疾病本身有干扰，但也有缓和病势的条件，力量还出现向外消散的迹象。因此，这一处不是完全没有松动余地；只是病情稍有缓和，并不代表父亲自身所受压力便会随之解除。\n\n医生所在位置与病情相连，却没有主动压制疾病的关系。药物与疾病所处环境相近，又出现力量落空和受困的情况，求医用药的实际助力因此受到限制，不能简单视为有效控制。\n\n代表当前发展的线索另在一处，不能直接当作父亲的扶助。男性长辈的辅助位置则与药物同在一处，那里的受困条件也不能因为承担两种角色就重复计分。\n\n综合全局，父亲一端受到疾病的制约，医药帮助亦难充分发挥，这些不利超过病宫局部的缓和迹象，故总体严重偏凶。此局并无可据以直接断快慢的整盘变化格局，具体时日也没有充分证据。"
+    },
+    "professional_sections": {
+      "macro": "立春甲候选，甲子日壬申时，不犯五不遇。无整盘伏吟反吟，不能仅凭时局确认速度。",
+      "illness": "天芮在兑七，临生门、白虎，一面有生机，一面有干扰；双天地格一吉一凶，病星外泄，又得丁奇缓和。",
+      "patient": "父亲年甲甲子遁戊定位震三，值符同宫却有击刑。兑金克震木，病宫反克父亲主宫，不能以值符遮盖承压事实。",
+      "doctor": "天心在坎一，临杜门、九地；兑金生坎水，是病宫生天心，不代表天心主动制病。",
+      "medicine": "乙奇在乾六，伤门、玄武同宫，逢真空、天地双墓；乾兑同属金，比和不制病，医药扶助受困。",
+      "hour": "时干壬在巽四，事体自有独立位置，不能把它机械当成父亲主宫或医药宫。",
+      "chief": "值符与父亲同在震三，可作一份扶助，但同宫击刑及病宫兑金克震木仍须如实合断。",
+      "gender": "乾六作男性长辈辅助，与乙奇同宫，伤门、真空及双墓是同一宫条件，不重复叠分。",
+      "verdict": "虽然病宫生门、丁奇与外泄可缓，但父亲震三被兑七金克，且击刑；乾六医药真空双墓。冻结总判极大凶。",
+      "timing": "无整盘伏吟反吟；驿马在寅，缺少可核实冲合条件，不能编造康复或恶化日期。"
+    },
+    "professional_section_titles": {
+      "macro": "时局与变化节奏",
+      "illness": "疾病本身的阻碍",
+      "patient": "父亲自身的处境",
+      "doctor": "医生与求医条件",
+      "medicine": "药物能起多大作用",
+      "hour": "当前事情的发展",
+      "chief": "父亲得到的扶持",
+      "gender": "男性长辈的辅助判断",
+      "verdict": "综合判断",
+      "timing": "好转时间与条件"
+    },
+    "note": "参考用户确认的第一屏标准逐案创作。仅用历史数据原始身份/四柱/角色/证据 SHA 与原冻结等级核对，不恢复历史断词；仍draft，不属于iOS发布稿。",
+    "reviewer": null
+  },
+  "source_provenance": {
+    "raw_record_id": "father-000009-jieqi-a",
+    "original_full_reading_sha256": "be5532b3f889ad5b8dec0d43fe6e8b791be4fa2a8b47d1b929dd3a4fc7a16bb5",
+    "source_facts_sha256": "a1f2bee4a5d2863f998065e2e6e83e43b2b8faf4e3f26d099fb5da84fa8cf175",
+    "physical_sha256": "0eaff9df1432619a3d2936c01f30f79435503b1d114612454c0968929ac9630d",
+    "term_only": "甲",
+    "source_v8_recomputed": false,
+    "labels_checked_against_original": true,
+    "explicit_original_roles": {
+      "illness": 7,
+      "doctor": 1,
+      "medicine": 6,
+      "patient": 3,
+      "chief": 3,
+      "gender": 6
+    },
+    "source_sections_sha256": "5c9c8622cecd11a18a13cd79bd1473074a2e89c1dc90e59a01271a72abf362c7"
+  }
+}
