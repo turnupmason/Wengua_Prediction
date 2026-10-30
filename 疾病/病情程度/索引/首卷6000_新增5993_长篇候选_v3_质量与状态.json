@@ -1,0 +1,69 @@
+{
+  "schema": "wengua_father_6000_term_a_assisted_longform_editorial_v3",
+  "date": "2026-10-29",
+  "relationship": "father",
+  "scope": "first 6000 abstract four-pillar conditions, JieQi-A only, no natal",
+  "input_xlsx_sha256": "52474005292ea39c99151db1788523f9f338dfd964c0e94ad1fc66fb048472cf",
+  "input_bigfish_1080_zip_sha256": "c4232ae247bbf6f9ac8d23500e99f688c6d97b5c044c2801c85dc34d12cb2922",
+  "source_fact_locked_jsonl_sha256": "3748b1e3ff150b74625ac555c0ea53fa8680fa75e34cbd3eacb782f50eeb5812",
+  "raw_case_count": 6000,
+  "preserved_deep_v2_human_style_examples": 7,
+  "new_v3_evidence_constrained_batch_drafts": 5993,
+  "v3_physical_chart_keys": 900,
+  "v3_complete_professional_sections_each": 10,
+  "v3_min_character_count": 1963,
+  "v3_median_character_count": 2163,
+  "v3_max_character_count": 2477,
+  "v3_unique_first_screen_strings": 5993,
+  "v3_duplicate_first_screen_strings": 0,
+  "v3_grade_breakdown": {
+    "极大吉": 1988,
+    "大吉": 282,
+    "中吉": 341,
+    "小吉": 303,
+    "极小吉": 341,
+    "微恙": 265,
+    "极小凶": 251,
+    "小凶": 261,
+    "中凶": 275,
+    "大凶": 246,
+    "极大凶": 1440
+  },
+  "qa": {
+    "exact_original_evidence_sha_matches": 5993,
+    "exact_frozen_grade_and_score_matches": 5993,
+    "case_specific_original_physical_sha_matches": 5993,
+    "uncorroborated_pair_titles_added": 0,
+    "truncated_sections": 0,
+    "sqlite_integrity_check": "ok",
+    "originals_in_review_db": 6000,
+    "v3_drafts_in_review_db": 5993,
+    "approved": 0
+  },
+  "method": "program-assisted, source-locked longer reading drafts; NOT individually authored by LLM or reviewed by human",
+  "unverified": [
+    "independently recomputed V8.0 total score",
+    "verified month-specific 200-cell strength",
+    "verified 5x5 directional control re-run",
+    "all 5993 individually reviewed for literary quality",
+    "Swift app parity"
+  ],
+  "local_artifacts": {
+    "complete_zip_name": "Wengua_父亲正式首卷_其余5993长篇候选_完整审稿包_v3.zip",
+    "complete_zip_sha256": "9d85d0aafa356cd472f48ed0628fb331e69eb2f3580d5a7ff8b260541d59e8a1",
+    "complete_zip_bytes": 45428383,
+    "contains": [
+      "5993 versioned independent JSON under actual physical board directories",
+      "preserved previous seven v2 JSON",
+      "source fact-locked JSONL",
+      "original 1080 BigFish ZIP",
+      "review SQLite with 6000 originals and 5993 drafts",
+      "QA_REPORT.json",
+      "CSV review index",
+      "generator and QA scripts"
+    ],
+    "six_split_zips_available_to_user": true
+  },
+  "github_storage": "Public GitHub contains public-safe status and selected v3 illustrative draft files. Full 5993 generated drafts currently delivered as downloadable local bundle, not uploaded as 5993 individual GitHub files. Do not misrepresent local ZIP as remote commit.",
+  "human_release_gate": "No v3 item is approved; no v3 item may enter iOS release SQLite until independent editorial/fact checks and explicit human approval."
+}
