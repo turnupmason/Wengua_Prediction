@@ -69,7 +69,7 @@ def preapproval_git_blob_sha(record):
     original["editorial"]["human_approved"] = False
     original["editorial"]["reviewer"] = None
     payload = (json.dumps(original, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
-    return hashlib.sha1(("blob %d\\0" % len(payload)).encode("ascii") + payload).hexdigest()
+    return hashlib.sha1(("blob %d" % len(payload)).encode("ascii") + bytes([0]) + payload).hexdigest()
 
 
 def verify_explicit_approval(record, root, ledger=None):
