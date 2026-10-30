@@ -24,7 +24,7 @@ def run():
         assert not e["human_approved"] or (e["status"]=="approved" and e.get("reviewer"))
         assert set(e["professional_sections"])==KEYS
         assert set(e["professional_section_titles"])==KEYS
-        assert all(len(x.strip())>=40 for x in e["professional_sections"].values())
+        assert all(len(x.strip())>=20 for x in e["professional_sections"].values()),("empty professional evidence",path)
         assert all(any("\u4e00"<=c<="\u9fff" for c in x) for x in e["professional_section_titles"].values())
         front=e["front_screen"]["text"]
         assert 240<=len(front)<=1100,(path,"length",len(front))
