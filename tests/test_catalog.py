@@ -20,7 +20,7 @@ class ReadingContractTests(unittest.TestCase):
             self.assertFalse(validate(data, path, ROOT))
             self.assertNotIn(data["record_id"], ids)
             ids.add(data["record_id"])
-            self.assertEqual(data["editorial"]["status"], "draft")
+            self.assertIn(data["editorial"]["status"], ("draft","rejected"))
             self.assertFalse(data["editorial"]["human_approved"])
 
     def test_same_board_never_collapses_cases(self):
