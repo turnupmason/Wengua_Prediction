@@ -1,0 +1,60 @@
+{
+  "schema": "wengua_20261029_confirmed_style_batch_v9_audit_v1",
+  "label": "father_jieqi_a_first_6000",
+  "confirmed_style_case": 1,
+  "requested_remaining_at_start": 5999,
+  "actual_new_editorials_this_turn": 10,
+  "new_case_ids": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "active_v9_case_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "active_v9_count": 11,
+  "remaining_of_first_6000": 5989,
+  "source_branch": "a",
+  "natal_mode": "none",
+  "original_workbook_sha256": "52474005292ea39c99151db1788523f9f338df964c0e94ad1fc66fb048472cf",
+  "original_bigfish1080_zip_sha256": "c4232ae247bbf6f9ac8d23500e99f688c6d97b5c044c2801c85dc34d12cb2922",
+  "historical_readonly_fact_lock_commit": "2cc1ec90f0cb640cf16eedfddbdcee03e18bf06c",
+  "latest_style": "case-000001-jieqi-a.v9.json first screen exactly user confirmed; further cases independent prose of similar length and full 10 professional Chinese chapters",
+  "grading": "source frozen grades and scores untouched; automated expected SHA/grade/score/patient role tests for 11 cases",
+  "source_math": "200 grid and 5x5 source-strength V8 math not independently rerun in editorial turn",
+  "review_status": "draft",
+  "human_approved_count": 0,
+  "ios_eligible_count": 0,
+  "removed_historical_prose": "old v1-v8 literary documents are absent from current main; immutable source facts read only from historical ref to reconstruct locks, never imported the rejected prose",
+  "qa_latest_run": "https://github.com/turnupmason/Wengua_Prediction/actions/runs/40997064896",
+  "qa_latest_result": "success",
+  "qa_failures_retained": [
+    "Earlier push Actions checks failed because test_catalog asserted exactly one case, corrected to audited 11-case SOURCE_LOCK test",
+    "The first 11-case CI then failed on an arbitrary >=40 Chinese character per section rule, corrected to >=20; revised suite passed",
+    "Automated style checks and evidence SHA comparisons do not prove human literary approval or recalculate 200-cell source strengths"
+  ],
+  "next_case_id": 12,
+  "caveats": [
+    "There are six roles but not necessarily six independent physical palaces",
+    "Explicit period/date must only be written if truly supported; never infer clinical outcomes",
+    "No additional 5,989 final prose pieces claimed",
+    "The user's separately mentioned 584100 precomputed rows are not being asserted as uploaded to this GitHub current-turn workspace"
+  ]
+}
