@@ -1,0 +1,79 @@
+{
+  "schema_version": "wengua_reading_v1",
+  "record_id": "father-004201-jieqi-a-v6",
+  "physical_chart": {
+    "key": "yin-02-甲子",
+    "direction": "yin",
+    "ju": 2,
+    "hour_ganzhi": "甲子"
+  },
+  "source_context": {
+    "scenario_id": 4201,
+    "year": "甲子",
+    "month": "辛未",
+    "day": "甲寅",
+    "hour": "甲子",
+    "solar_term": "小暑",
+    "solar_term_branch": "a",
+    "relationship": "father",
+    "consultation_context": "direct_proxy",
+    "natal_mode": "none",
+    "abstract_scenario": true
+  },
+  "fact_lock": {
+    "original_text_sha256": "f873a77675acec69caa8ed71a5b753c963f19c46b64a7f1e81c4715f5e5aa16d",
+    "original_evidence_sha256": "b83d7118b32b7872c46f6e12f735535276e5839846078f30501ec2378a45be06",
+    "physical_board_sha256": "70a0744cb1bfbaa968af5d256490c3e2e316477e395d640761920e113d80edff",
+    "grade": "极大吉",
+    "score": 5,
+    "patient_symbol": "甲",
+    "patient_source_ganzhi": "甲子",
+    "carrier_stem": "戊",
+    "patient_palace": 2,
+    "rule_engine_source": "BigFish raw 1080 physical board + original frozen V8 result; V8 200-table math not rerun",
+    "source_fact_issue": []
+  },
+  "editorial": {
+    "version": 6,
+    "status": "draft",
+    "human_approved": false,
+    "front_screen": {
+      "banner": "吉局",
+      "title": "极大吉：沉疴顿愈",
+      "text": "父亲年甲与病星、值符同在坤二，死门不利，但值符和丁奇也在此宫，病象有缓和条件。乙奇在震三，震木克坤土，原盘显示医药有制病之力；天心乾六有开门，却逢假空。全局吉处在医药制病与同宫得助。天显遇伏吟，进展偏缓。"
+    },
+    "professional_sections": {
+      "macro": "甲寅日甲子时，天显与伏吟同现。本时不犯五不遇，有助而进展偏慢。",
+      "illness": "天芮坤二临死门，戊加戊为凶，丁加丁为吉。值符同在病宫，中五寄干与天芮双格同参。",
+      "patient": "父亲以问测年甲子遁戊，落坤二，与病宫同宫。患者受此宫死门影响，也同受值符和丁奇扶持；不另算跨宫克病。",
+      "doctor": "天心在乾六，开门有求医之路，假空限制发挥；坤土生乾金，不属于天心主动克病。",
+      "medicine": "乙奇落震三，震木克坤土，原源事实记有制病之力。伤门和乙加乙伏吟仍是医药宫的阻滞。",
+      "hour": "甲子时干与父亲、病宫同在坤二，三种身份共同对应一个实宫。",
+      "chief": "值符与天芮、年甲同宫，有护持之象；本宫基础不可多次计入。",
+      "gender": "乾六作父亲辅助，又与天心同宫，开门、假空一并考虑。",
+      "verdict": "病宫死门和伏吟不利，值符、丁奇同宫扶助，乙奇在震三有力制病。原局取极大吉，吉处有依据，仍须顾及行事迟缓。",
+      "timing": "天显逢伏吟，助势有而不速。驿马在寅，应期须另核空墓冲合。"
+    },
+    "note": "用户否决v5套话后，按真实证据重新精简编写；不改原V8/原盘事实；独立计分未重跑；未经人工批准，不入iOS。",
+    "reviewer": null,
+    "previous_version_rejected": "v5"
+  },
+  "source_provenance": {
+    "raw_record_id": "father-004201-jieqi-a",
+    "original_full_reading_sha256": "f873a77675acec69caa8ed71a5b753c963f19c46b64a7f1e81c4715f5e5aa16d",
+    "source_facts_sha256": "b83d7118b32b7872c46f6e12f735535276e5839846078f30501ec2378a45be06",
+    "physical_sha256": "70a0744cb1bfbaa968af5d256490c3e2e316477e395d640761920e113d80edff",
+    "term_only": "甲",
+    "source_v8_recomputed": false,
+    "labels_checked_against_original": true,
+    "explicit_original_roles": {
+      "illness": 2,
+      "doctor": 6,
+      "medicine": 3,
+      "patient": 2,
+      "chief": 2,
+      "gender": 6
+    },
+    "source_sections_sha256": "eb10474782dafa20907d2e3df3c784ff5b6c883b11851b8ab3363ca59bc2ddf5"
+  }
+}
