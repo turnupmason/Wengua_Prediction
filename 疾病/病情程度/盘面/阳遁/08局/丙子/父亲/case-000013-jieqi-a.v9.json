@@ -1,0 +1,90 @@
+{
+  "schema_version": "wengua_reading_v1",
+  "record_id": "father-000013-jieqi-a-v9",
+  "physical_chart": {
+    "key": "yang-08-丙子",
+    "direction": "yang",
+    "ju": 8,
+    "hour_ganzhi": "丙子"
+  },
+  "source_context": {
+    "scenario_id": 13,
+    "year": "甲子",
+    "month": "丙寅",
+    "day": "乙丑",
+    "hour": "丙子",
+    "solar_term": "立春",
+    "solar_term_branch": "a",
+    "relationship": "father",
+    "consultation_context": "direct_proxy",
+    "natal_mode": "none",
+    "abstract_scenario": true
+  },
+  "fact_lock": {
+    "original_text_sha256": "cb23cccd49782ec47c82f75190d1e1ed14b760192f449b135f19c1d2207b5ae3",
+    "original_evidence_sha256": "4da4396ee1cb051888071615e7d1978243eb9a2865a9b2ba79b2b33ab433c09e",
+    "physical_board_sha256": "c2920cb6ccb1385700d06860117a3b1726d7e23ac729106c8566cae435a24378",
+    "grade": "小吉",
+    "score": 2,
+    "patient_symbol": "甲",
+    "patient_source_ganzhi": "甲子",
+    "carrier_stem": "戊",
+    "patient_palace": 9,
+    "rule_engine_source": "BigFish raw 1080 physical board + original frozen V8 result; V8 200-table math not rerun",
+    "source_fact_issue": []
+  },
+  "editorial": {
+    "version": 9,
+    "status": "draft",
+    "human_approved": false,
+    "front_screen": {
+      "banner": "吉局",
+      "title": "小吉：转危为安",
+      "text": "父亲的病情还有改善的余地，不过眼前能够依靠的条件并不充足，所以整体只是略偏有利。病势本身虽然有被消耗的表现，父亲所处的位置却不够稳妥，求医用药也需要分别观察。\n\n父亲所在的一处容易受到阻挡，而且还被疾病一方压制，说明自身承受病势时并不轻松。这张盘的好处不能从父亲的处境里单独寻找，必须结合疾病的变化和其他帮助来判断。\n\n病情这一边有反复干扰，内部还有不利因素交叠。然而病势的力量又有耗散，所在位置也有缓和病情的条件，因此并非只见加重，不见松动。\n\n医生一侧有利于恢复的条件，但发挥时通路受阻，且没有直接克制疾病。药物一侧同样有受限的情况，不过它对病势具有牵制方向；至于这种帮助能起多大作用，仍须结合其自身处境，不宜说成已经奏效。\n\n当前事情的发展与医生落在同一位置，求医过程和事情进退有着联系。另看男性长辈的辅助位置，那里虽有扶持力量，却不意味着它能直接克病，不能因此忽略父亲本身承压的事实。\n\n综合各处，父亲虽受疾病压制，病势自身却有耗散，药物也有牵制疾病的可能，故全盘仍略向好。只是助力有局限，不能据此断定好转幅度很大；病情快慢和具体恢复日期也没有足够证据。"
+    },
+    "professional_sections": {
+      "macro": "立春甲候选，乙丑日丙子时，不犯五不遇，无整盘伏吟反吟，不据此确定快慢。",
+      "illness": "天芮在坎一，开门、螣蛇并临，宫内两组凶格同在。病星外泄，又见丁奇缓和，病势有阻亦有减弱条件。",
+      "patient": "父亲年甲甲子遁戊定位离九，临杜门；坎水克离火，病宫克父亲宫，患者自身承受压力。",
+      "doctor": "天心居震三，临生门、六合，门受迫；病宫坎水生震木，非医生主动克病。",
+      "medicine": "乙奇落艮八，休门、太阴同宫，门受迫；艮土克坎水有制病方向，但发挥条件仍须细审。",
+      "hour": "时干丙与天心同在震三，求医环境与事体发展相互关联，宜合看宫内受迫条件。",
+      "chief": "值符在乾六临惊门，乾金生坎水病宫，不等同于直接克制病势，扶持作用不能据吉神名号夸大。",
+      "gender": "乾六是男长辈辅助，同时承载值符，临惊门。它能否帮到父亲，还需看与离九主宫及病宫的真实关系。",
+      "verdict": "父亲离九受病宫坎水克，医生未主动制病；病势外泄、丁奇缓和以及乙奇艮八克坎一之向，综合后原局仍属小吉。",
+      "timing": "无整盘伏吟或反吟；驿马在寅仅供观察变化，具体冲合触发未明，不定时日。"
+    },
+    "professional_section_titles": {
+      "macro": "时局与变化节奏",
+      "illness": "疾病本身的阻碍",
+      "patient": "父亲自身的处境",
+      "doctor": "医生与求医条件",
+      "medicine": "药物能起多大作用",
+      "hour": "当前事情的发展",
+      "chief": "父亲得到的扶持",
+      "gender": "男性长辈的辅助判断",
+      "verdict": "综合判断",
+      "timing": "好转时间与条件"
+    },
+    "note": "根据用户确认文风逐案独立润色。用户可见文本不用任何内部计分语言。原始四柱、真实宫位、来源SHA、冻结等级一律不改。未获iOS发布批准。",
+    "reviewer": null
+  },
+  "source_provenance": {
+    "raw_record_id": "father-000013-jieqi-a",
+    "original_full_reading_sha256": "cb23cccd49782ec47c82f75190d1e1ed14b760192f449b135f19c1d2207b5ae3",
+    "source_facts_sha256": "4da4396ee1cb051888071615e7d1978243eb9a2865a9b2ba79b2b33ab433c09e",
+    "physical_sha256": "c2920cb6ccb1385700d06860117a3b1726d7e23ac729106c8566cae435a24378",
+    "term_only": "甲",
+    "source_v8_recomputed": false,
+    "labels_checked_against_original": true,
+    "explicit_original_roles": {
+      "illness": 1,
+      "doctor": 3,
+      "medicine": 8,
+      "patient": 9,
+      "chief": 6,
+      "gender": 6
+    },
+    "source_sections_sha256": "d12e482e4284dc6989d9e6206492665b32bda9341ea7a71f9cfeedf6149217e8"
+  }
+}
