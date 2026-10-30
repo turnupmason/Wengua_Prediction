@@ -13,7 +13,8 @@ jobs:
           python-version: '3.11'
       - name: Verify all curated draft facts and disallow draft publication
         run: |
-          python3 -m unittest discover -s tests -v\n          python3 tools/check_reader_style.py
+          python3 -m unittest discover -s tests -v
+          python3 tools/check_reader_style.py
           python3 -m py_compile tools/build_offline_catalog.py tools/verify_imported_bigfish_sources.py tools/plan_board_groups.py tools/import_father5993_bundle.py
       - name: Build zero-approved local test catalog
         run: |
