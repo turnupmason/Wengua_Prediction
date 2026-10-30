@@ -1,0 +1,82 @@
+{
+  "schema": "wengua_first_production_father6000_physical_verification_v1",
+  "input": {
+    "workbook_name": "father_000001-006000(1).xlsx",
+    "sha256": "52474005292ea39c99151db1788523f9f338dfd964c0e94ad1fc66fb048472cf",
+    "matches_previous_experiment_workbook_sha": true,
+    "relationship": "father",
+    "solar_term_branch": "a",
+    "natal": "none"
+  },
+  "physical_archive": {
+    "name": "1080.zip",
+    "sha256": "c4232ae247bbf6f9ac8d23500e99f688c6d97b5c044c2801c85dc34d12cb2922",
+    "bigfish_source_commit": "6112b3937d7fcaa2ab0a34aec2a52f74e2effe6c",
+    "json_files": 1080,
+    "macos_resource_forks_ignored": 1080,
+    "valid_json": 1080,
+    "outer_palaces_plus_empty_center_per_board": 9,
+    "distinct_direction_ju": 18,
+    "distinct_hours_per_direction_ju": 60
+  },
+  "validation": {
+    "input_records": 6000,
+    "used_physical_chart_ids": 900,
+    "chart_and_output_field_matches": 6000,
+    "chart_field_mismatches": 0,
+    "checked": [
+      "physical chart ID",
+      "dun and ju",
+      "hour Ganzhi",
+      "father casting year 甲子→戊 carrier location",
+      "patient palace column",
+      "star/door/deity",
+      "heaven and earth stems",
+      "Kun2 center-host pair semantics",
+      "ordered 81 heaven-over-earth pairs",
+      "frozen grade and internal score mapping",
+      "all ten original customer sections"
+    ],
+    "not_independently_recalculated": [
+      "month-specific 200 energy table",
+      "full source physical power and directed 5x5 control matrix",
+      "original V8 frozen formula total",
+      "fresh BigFish TS casting for this turn",
+      "Python/Swift byte-for-byte parity"
+    ],
+    "notices_not_blockers": {
+      "unknown_strength_势待核": 1852,
+      "zero_microillness_and_neutral_wording_match": 266
+    },
+    "distinct_original_full_texts": 1920
+  },
+  "editorial": {
+    "previous_experimental_drafts": "preserved_as_history_not_approved",
+    "real_1080_verified_new_expanded_v2_drafts": 7,
+    "deep_sample_serials": [
+      1,
+      2,
+      20,
+      42,
+      3000,
+      4201,
+      6000
+    ],
+    "each_has_full_ten_sections": true,
+    "each_has_independent_sha_lock": true,
+    "new_draft_average_characters": 1020,
+    "approved": 0,
+    "published": 0,
+    "local_bundle_sha256": "282bf493a460065b88fecf41966acc4a1e45cc960fa5a43c9f4437174f16ddf6",
+    "local_bundle_name": "Wengua_正式父亲首6000_原盘核验与深入断语_v2.zip",
+    "local_sqlite_status": "source_archive_with_7_drafts_not_iOS_release"
+  },
+  "constraints": [
+    "do not claim all 6000 have been individually literary rewritten",
+    "do not change V8 grade or source power",
+    "always use real 1080 raw chart for exact physical fact checks",
+    "do not infer real Gregorian date from abstract combination",
+    "only user-human-approved drafts enter offline release"
+  ],
+  "note": "This metadata/summary is public; full uploaded workbook/source archive/unedited original texts retained local until approved or explicit distribution authorization."
+}
