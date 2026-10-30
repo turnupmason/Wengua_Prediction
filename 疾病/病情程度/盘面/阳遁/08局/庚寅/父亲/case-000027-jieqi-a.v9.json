@@ -1,0 +1,81 @@
+{
+  "schema_version": "wengua_reading_v1",
+  "record_id": "father-000027-jieqi-a-v9",
+  "physical_chart": {
+    "key": "yang-08-庚寅",
+    "direction": "yang",
+    "ju": 8,
+    "hour_ganzhi": "庚寅"
+  },
+  "source_context": {
+    "scenario_id": 27,
+    "year": "甲子",
+    "month": "丙寅",
+    "day": "丙寅",
+    "hour": "庚寅",
+    "solar_term": "立春",
+    "solar_term_branch": "a",
+    "relationship": "father",
+    "consultation_context": "direct_proxy",
+    "natal_mode": "none",
+    "abstract_scenario": true
+  },
+  "fact_lock": {
+    "original_text_sha256": "526c2cda205c6f8c10e92c90fb55d434e6bbab0a6a5845b745114f93ee58bf30",
+    "original_evidence_sha256": "b81455653dd809a5af518cd68b40bc5ac20b3ef14edea170e0d97e609ea9cf26",
+    "grade": "中凶",
+    "score": -3,
+    "patient_symbol": "甲",
+    "patient_source_ganzhi": "甲子",
+    "carrier_stem": "戊",
+    "patient_palace": 8,
+    "rule_engine_source": "BigFish actual 1080 JSON and uploaded Father.zip frozen V8; calculations unchanged",
+    "source_fact_issue": []
+  },
+  "editorial": {
+    "version": 9,
+    "status": "draft",
+    "human_approved": false,
+    "front_screen": {
+      "banner": "凶局",
+      "title": "中凶：病势难平",
+      "text": "父亲这次病情的判断偏向不利，问题主要在于父亲自身难以顺畅发挥，代表当前进展的那一处也受到明显牵制。疾病所在的位置虽有缓和因素，医生一侧甚至有较好的条件，但这些好处没有直接转成压住病势的力量。\n\n父亲所处的位置不算安稳，通路受到阻隔，内部也有纠缠不清的迹象。他与疾病所处的位置性质相近，并不能主动克制病势。因此，父亲并非全无依靠，却也不足以仅凭自身条件扭转局面。\n\n疾病一侧倒有相对有利的因素。原本难以松动的病势，在这一处出现力量落空，且带有缓和条件；但这种缓和本身同样受限，不能说病情已完全解除。病势并非处处旺盛，仍不等于父亲自身能够顺利恢复。\n\n医生所在位置有求医通路，也有一些扶持，但同样被受困条件牵制，且没有直接克病。药物一侧虽然具备守持的条件，却难以主动压病，不能把求医机会和治疗效果混作一件事。\n\n代表当前发展的线索落在另一处，那里带着较重的损耗，虽有扶助，仍遭疾病一方克制。男性长辈的辅助位置恰与医生相连，因此所见帮助和受困情况须一并理解。\n\n合看各方，病宫有可缓之处，但父亲自身和当前进展存在较大阻碍，医药又缺乏直接压病的证据，全局仍属中凶。局中进程偏慢，不能据此认定何时病愈。"
+    },
+    "professional_sections": {
+      "macro": "立春甲候选，丙寅日庚寅时，不犯五不遇，伏吟主慢，主要反映进展迟滞而非自动改写全局等级。",
+      "illness": "天芮在坤二，开门、玄武同临，辛加辛「伏吟天庭」凶、丁加丁「奇入太阴」吉。病宫假空，既有缓和和削弱之象，丁奇助力亦须审逢空。",
+      "patient": "父亲年甲子之甲以甲子遁戊定位艮八，杜门、螣蛇同宫，戊加戊「伏吟」且门破，环境不畅；艮土与坤土比和，没有患者直接克病关系。",
+      "doctor": "天心在乾六，临生门、九天，有求医可取之象，但丙加丙「月奇孛师」，天盘地盘双入墓，助力难以尽展。坤土生乾金，不是医生克病。",
+      "medicine": "乙奇在兑七，休门、九地同临，乙加乙「日奇伏吟」为凶。兑金受坤土病宫所生，医药不能主动制约坤二病宫。",
+      "hour": "时干庚在坎一，伤门、天蓬及庚加庚「太白同宫」相并，宫象不佳。坤二土克坎一水，事体端又受病宫牵制。",
+      "chief": "值符在坎一，与时干同处。伤门、太白同宫及病宫克坎一水的压力，意味着护持亦有难以充分发挥的一面。",
+      "gender": "乾六是男性长辈辅宫，与天心医生同在生门九天之处；天地双墓及丙加丙伏吟格仍需一同看，不能只取一面吉意。",
+      "verdict": "坤二病宫假空、有丁奇缓和，乾六天心也见生门；但父亲艮八门破、时干坎一受病克且伤门重，乙奇兑七不主动制病。结合全盘，仍属中凶。",
+      "timing": "伏吟主慢，驿马在申，只能作为动变候选；没有足以确定日子的应期条件。"
+    },
+    "professional_section_titles": {
+      "macro": "时局与变化节奏",
+      "illness": "疾病本身的阻碍",
+      "patient": "父亲自身的处境",
+      "doctor": "医生与求医条件",
+      "medicine": "药物能起多大作用",
+      "hour": "当前事情的发展",
+      "chief": "父亲得到的扶持",
+      "gender": "男性长辈的辅助判断",
+      "verdict": "综合判断",
+      "timing": "好转时间与条件"
+    },
+    "note": "实际读取用户完整上传518400源Excel及1080原盘编写的独立专业文学候选；事实SHA和原冻结结果不变。用户可见稿件不出现计算语言，人工批准前不得发布iOS。",
+    "reviewer": null,
+    "approval_required": true
+  },
+  "source_provenance": {
+    "raw_record_id": "father-000027-jieqi-a",
+    "original_full_reading_sha256": "526c2cda205c6f8c10e92c90fb55d434e6bbab0a6a5845b745114f93ee58bf30",
+    "source_facts_sha256": "b81455653dd809a5af518cd68b40bc5ac20b3ef14edea170e0d97e609ea9cf26",
+    "term_only": "甲",
+    "source_v8_recomputed": false,
+    "labels_checked_against_original": true,
+    "source_workbook": "father_000001-006000.xlsx"
+  }
+}
