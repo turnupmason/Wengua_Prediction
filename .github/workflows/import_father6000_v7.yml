@@ -19,7 +19,7 @@ jobs:
         with:
           persist-credentials: true
           fetch-depth: 1
-      - uses: actions/setup-python@v7
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       - name: Strict source-file SHA and 6000-case independent path validation
