@@ -34,7 +34,8 @@ SOURCE_LOCK = {
 class ReadingContractTests(unittest.TestCase):
     def test_current_batched_cases_only_v9_and_source_sha_exact(self):
         paths=sorted(BOARD.rglob("case-*.json"))
-        self.assertEqual(len(paths),20)\n        self.assertTrue(all(p.name.endswith(".v9.json") for p in paths))
+        self.assertEqual(len(paths),20)
+        self.assertTrue(all(p.name.endswith(".v9.json") for p in paths))
         seen=set()
         for path in paths:
             data=json.loads(path.read_text(encoding="utf-8"))
