@@ -1,0 +1,46 @@
+name: Import 6000 source-locked layperson drafts v5
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'staging/father6000_v5/READY.json'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import-draft-records:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    concurrency:
+      group: father6000-v5-import
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Strict source-file SHA and 6000-case independent path validation
+        run: |
+          python3 tools/unpack_father6000_v5.py .
+          test "$(find '疾病/病情程度/盘面' -name 'case-*-jieqi-a.v5.json' | wc -l)" -eq 6000
+      - name: Editorial contract tests and iOS publish gate
+        run: |
+          python3 -m unittest discover -s tests -v
+          python3 tools/build_offline_catalog.py --root . --out /tmp/approved_only.sqlite
+          python3 - <<'PY'
+          import sqlite3
+          c=sqlite3.connect('/tmp/approved_only.sqlite')
+          assert c.execute('SELECT COUNT(*) FROM readings').fetchone()[0]==0, 'Draft leaked to offline release!'
+          print('Approved-only SQLite has zero drafts as expected')
+          PY
+      - name: Commit 6000 draft JSON files under exact original physical boards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- '疾病/病情程度/盘面'
+          git diff --cached --quiet && exit 0
+          git commit -m "Import 6000 novice-readable source-locked father readings v5 as unapproved drafts"
+          git push origin HEAD:main
