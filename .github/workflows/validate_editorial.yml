@@ -14,7 +14,7 @@ jobs:
       - name: Verify all curated draft facts and disallow draft publication
         run: |
           python3 -m unittest discover -s tests -v
-          python3 -m py_compile tools/build_offline_catalog.py
+          python3 -m py_compile tools/build_offline_catalog.py tools/verify_imported_bigfish_sources.py tools/plan_board_groups.py
       - name: Build zero-approved local test catalog
         run: |
           python3 tools/build_offline_catalog.py --root . --out /tmp/test_readings.sqlite
