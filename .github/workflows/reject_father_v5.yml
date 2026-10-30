@@ -1,0 +1,39 @@
+name: Reject all father Jieqi-A v5 boilerplate editorials
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'staging/father6000_v5/REJECT_ALL_20261029.json'
+permissions:
+  contents: write
+jobs:
+  reject:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 tools/reject_father6000_v5.py
+      - run: |
+          python3 -m unittest discover -s tests -v
+          python3 tools/build_offline_catalog.py --root . --out /tmp/rejected_approved_only.sqlite
+          python3 - <<'PY'
+          import pathlib,json,sqlite3
+          ps=list(pathlib.Path('疾病/病情程度/盘面').rglob('case-*-jieqi-a.v5.json'))
+          assert len(ps)==6000
+          assert all(json.loads(p.read_text())['editorial']['status']=='rejected' for p in ps)
+          d=sqlite3.connect('/tmp/rejected_approved_only.sqlite')
+          assert d.execute('select count(*) from readings').fetchone()[0]==0
+          print('6000 rejected / 0 approved offline')
+          PY
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- '疾病/病情程度/盘面'
+          git diff --cached --quiet && exit 0
+          git commit -m 'Reject all 6000 v5 boilerplate drafts without altering frozen facts'
+          git push origin HEAD:main
