@@ -84,3 +84,10 @@ tests/
 用户明确否决全部v5文学质量：固定开头、频繁设问、套话与空泛解释。已用原证据保留的方式将GitHub中6000个v5状态改为 **rejected**，而不是删除历史、修改冻结V8或谎称已重写完成。GitHub Actions [#40990230441](https://github.com/turnupmason/Wengua_Prediction/actions/runs/40990230441) PASS。当前7份独立编辑的v6，标记为draft，位置为原物理盘下case 000001/000002/000020/000042/003000/004201/006000；**其余5993合格新稿未完成**。本次尝试的程序自动压缩产生高度重复、另有90条要核更深的原计分来源，**没有上传为合格稿**。
 
 新规范：[用户全卷退稿](疾病/病情程度/审核/v5_全6000退稿记录_20261029.md) · [editorial_policy](疾病/病情程度/审核/editorial_policy.md) · [handoff](疾病/病情程度/审核/handoff_prompt.md) · [问句/固定句式禁止与V8事实锁的自动门槛](tools/check_reader_style.py)。今后网页、iOS正式资源都不可自动使用v5退稿，且没有经过批准的v6也不可加入iOS发布。
+
+
+## 2026-10-29 · v7 全6000独立盘面文件真正入库
+按用户最新认定：**“病宫在某宫”是正常起笔，重复本身不是问题；总吉凶须服从冻结V8.0全局累计总分，不得以病宫/父亲两处局部相反便报错**。已重新从正式首卷原证据及1080原盘约束，生成6,000份简短、直述、首页+第二屏十章的 `v7.json` 文件。
+真实GitHub Actions [#40993002914](https://github.com/turnupmason/Wengua_Prediction/actions/runs/40993002914) 全量导入、来源SHA、同记录v5的身份/事实锁逐字段等同、目录、iOS仅approved防漏测试 PASS；实际 main 提交 `2cc1ec90f0cb640cf16eedfddbdcee03e18bf06c` 递归树未截断，`v7.json=6000`、900个物理盘键，`v5.json=6000` rejected历史仍保留。原首次导入正则错误FAIL、修复通过记录不删。
+[首卷v7正式索引](疾病/病情程度/索引/首卷6000_v7_正式入库与质量边界.json) · [最新文风与总分审稿规范](疾病/病情程度/审核/editorial_policy.md) · [跨窗口Prompt](疾病/病情程度/审核/handoff_prompt.md)
+**v7依旧是程序辅助草稿，不等于每篇都已独立人工达到老练断案师的语言高度**。允许基于同盘同证据的正常重复；不把“唯一SHA”当成品质。未经人工批准全部不可进入离线iOS发布资源。WenguaApp冻结V8/200/81与Swift无修改。
