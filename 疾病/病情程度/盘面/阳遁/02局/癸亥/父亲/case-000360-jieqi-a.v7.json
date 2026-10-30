@@ -1,0 +1,82 @@
+{
+  "schema_version": "wengua_reading_v1",
+  "record_id": "father-000360-jieqi-a-v7",
+  "physical_chart": {
+    "key": "yang-02-癸亥",
+    "direction": "yang",
+    "ju": 2,
+    "hour_ganzhi": "癸亥"
+  },
+  "source_context": {
+    "scenario_id": 360,
+    "year": "甲子",
+    "month": "丙寅",
+    "day": "癸巳",
+    "hour": "癸亥",
+    "solar_term": "立春",
+    "solar_term_branch": "a",
+    "relationship": "father",
+    "consultation_context": "direct_proxy",
+    "natal_mode": "none",
+    "abstract_scenario": true
+  },
+  "fact_lock": {
+    "original_text_sha256": "92ebac7c90a4bcb3dbaca9f0ef2bb9845bbc41543c82b96497d0244984b09f8a",
+    "original_evidence_sha256": "9044e6ca0951d7de17de8301a82b5249bd4701600c45cd0663f6bf8432838238",
+    "physical_board_sha256": "ec086de578e6a3ef6076dd961bd649fa48bbbc52e24a97848c839a88fc2e81db",
+    "grade": "极大凶",
+    "score": -5,
+    "patient_symbol": "甲",
+    "patient_source_ganzhi": "甲子",
+    "carrier_stem": "戊",
+    "patient_palace": 2,
+    "rule_engine_source": "BigFish raw 1080 physical board + original frozen V8 result; V8 200-table math not rerun",
+    "source_fact_issue": []
+  },
+  "editorial": {
+    "version": 7,
+    "status": "draft",
+    "human_approved": false,
+    "front_screen": {
+      "banner": "凶局",
+      "title": "极大凶：命悬一线",
+      "text": "病宫在坤二，临死门。父亲年甲在坤二，临死门。病宫死门主滞，病象不轻。医药所在宫受制，助力有限。综合取凶，阻滞偏久。"
+    },
+    "professional_sections": {
+      "macro": "立春候选，癸巳日癸亥时。不犯五不遇。伏吟主慢，进展偏缓。",
+      "illness": "天芮居坤二，临死门、九天。死门主滞，病象不轻。宫内两组凶格同在。中五寄坤，双格同审。",
+      "patient": "父亲取问测年甲，甲子遁戊定位坤二。死门使处境滞重。父亲宫与病宫同处一宫，得失相连。",
+      "doctor": "天心居乾六，临开门、螣蛇。开门可通。病宫生天心，不是天心主动制病。",
+      "medicine": "乙奇居坎一，临休门、太阴。逢真空，助力受折。乙奇反受病宫所克。",
+      "hour": "癸亥时，时干在兑宫。时干反映事体动向，按该宫的原有条件参断。",
+      "chief": "值符在兑七，临惊门。病宫生值符，不是值符主动制病。",
+      "gender": "乾六作男长辈辅宫，与天心同处，求医与父亲辅证合看。",
+      "verdict": "病宫在坤二，父亲在坤二。父亲宫与病宫同处一宫，得失相连。病宫死门主滞，病象不轻。全局定极大凶，个别吉象不能抵消其余失分。",
+      "timing": "伏吟主慢，进展偏缓。驿马在巳；具体应期尚无可核定的冲合条件。"
+    },
+    "note": "v7依用户最新规则压缩：局部宫象和合局总分可不同，不为此认定原判错误；自然重复宫位不当错误；源事实、等级和原始版本不动。程序辅助文案，未经用户正式批准，不进入iOS SQLite。",
+    "reviewer": null,
+    "previous_versions": {
+      "v5": "user_rejected",
+      "v6": "only_seven_curated_examples"
+    }
+  },
+  "source_provenance": {
+    "raw_record_id": "father-000360-jieqi-a",
+    "original_full_reading_sha256": "92ebac7c90a4bcb3dbaca9f0ef2bb9845bbc41543c82b96497d0244984b09f8a",
+    "source_facts_sha256": "9044e6ca0951d7de17de8301a82b5249bd4701600c45cd0663f6bf8432838238",
+    "physical_sha256": "ec086de578e6a3ef6076dd961bd649fa48bbbc52e24a97848c839a88fc2e81db",
+    "term_only": "甲",
+    "source_v8_recomputed": false,
+    "labels_checked_against_original": true,
+    "explicit_original_roles": {
+      "illness": 2,
+      "doctor": 6,
+      "medicine": 1,
+      "patient": 2,
+      "chief": 7,
+      "gender": 6
+    },
+    "source_sections_sha256": "b7de3879b9504cf0eb53fa1eba01f262e8e3e331540eea41907377c7ac74268d"
+  }
+}

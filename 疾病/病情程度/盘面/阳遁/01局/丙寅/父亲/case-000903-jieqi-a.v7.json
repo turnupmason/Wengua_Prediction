@@ -1,0 +1,82 @@
+{
+  "schema_version": "wengua_reading_v1",
+  "record_id": "father-000903-jieqi-a-v7",
+  "physical_chart": {
+    "key": "yang-01-丙寅",
+    "direction": "yang",
+    "ju": 1,
+    "hour_ganzhi": "丙寅"
+  },
+  "source_context": {
+    "scenario_id": 903,
+    "year": "甲子",
+    "month": "丁卯",
+    "day": "己卯",
+    "hour": "丙寅",
+    "solar_term": "惊蛰",
+    "solar_term_branch": "a",
+    "relationship": "father",
+    "consultation_context": "direct_proxy",
+    "natal_mode": "none",
+    "abstract_scenario": true
+  },
+  "fact_lock": {
+    "original_text_sha256": "7d7efced62cccae5c3c7e98f4f84b00ab2ab958948c578e8e1757446e5ab8098",
+    "original_evidence_sha256": "e4e8464b1a7f9c7e19ef37d9c58065df74e7c7ed1dd75adb944e7430ef42e79a",
+    "physical_board_sha256": "4141afbbdca26cc24be2ad8dd11c37b689ac0d3fc4ea90a1f5962901feadfe7f",
+    "grade": "小吉",
+    "score": 2,
+    "patient_symbol": "甲",
+    "patient_source_ganzhi": "甲子",
+    "carrier_stem": "戊",
+    "patient_palace": 8,
+    "rule_engine_source": "BigFish raw 1080 physical board + original frozen V8 result; V8 200-table math not rerun",
+    "source_fact_issue": []
+  },
+  "editorial": {
+    "version": 7,
+    "status": "draft",
+    "human_approved": false,
+    "front_screen": {
+      "banner": "吉局",
+      "title": "小吉：转危为安",
+      "text": "父亲年甲在艮八，临开门、值符。病宫在兑七，临景门、玄武。病星外泄，病势有耗；丁奇同宫之助因空亡减弱。医药所在宫受制，助力有限。综合取吉，应期另看。"
+    },
+    "professional_sections": {
+      "macro": "惊蛰候选，己卯日丙寅时。不犯五不遇。无整盘伏吟、反吟，不单据此定快慢。",
+      "illness": "天芮居兑七，临景门、玄武。门受制，转圜受阻；玄武同临，添一层扰动。两组天地格一吉一凶。病星外泄，病势有耗；丁奇同宫之助因空亡减弱。",
+      "patient": "父亲取问测年甲，甲子遁戊定位艮八。值符同守，有扶持；开门临宫，尚有通路。父亲宫生扶病宫，不作制病论。值符同宫扶助。",
+      "doctor": "天心居坎一，临惊门、九天。病宫生天心，不是天心主动制病。",
+      "medicine": "乙奇居坤二，临杜门、白虎。门受迫。乙奇生扶病宫，不作制病论。",
+      "hour": "丙寅时，时干在震宫。时干反映事体动向，按该宫的原有条件参断。",
+      "chief": "值符与父亲同在艮八，扶持归该宫，不另立宫。",
+      "gender": "乾六另参父亲长辈环境。临死门，与主用神分开。真空。",
+      "verdict": "病宫在兑七，父亲在艮八。父亲宫生扶病宫，不作制病论。病星外泄，病势有耗；丁奇同宫之助因空亡减弱。全局定小吉，不因单宫受克就改级。",
+      "timing": "无整盘伏吟、反吟，不单据此定快慢。驿马在申；具体应期尚无可核定的冲合条件。"
+    },
+    "note": "v7依用户最新规则压缩：局部宫象和合局总分可不同，不为此认定原判错误；自然重复宫位不当错误；源事实、等级和原始版本不动。程序辅助文案，未经用户正式批准，不进入iOS SQLite。",
+    "reviewer": null,
+    "previous_versions": {
+      "v5": "user_rejected",
+      "v6": "only_seven_curated_examples"
+    }
+  },
+  "source_provenance": {
+    "raw_record_id": "father-000903-jieqi-a",
+    "original_full_reading_sha256": "7d7efced62cccae5c3c7e98f4f84b00ab2ab958948c578e8e1757446e5ab8098",
+    "source_facts_sha256": "e4e8464b1a7f9c7e19ef37d9c58065df74e7c7ed1dd75adb944e7430ef42e79a",
+    "physical_sha256": "4141afbbdca26cc24be2ad8dd11c37b689ac0d3fc4ea90a1f5962901feadfe7f",
+    "term_only": "甲",
+    "source_v8_recomputed": false,
+    "labels_checked_against_original": true,
+    "explicit_original_roles": {
+      "illness": 7,
+      "doctor": 1,
+      "medicine": 2,
+      "patient": 8,
+      "chief": 8,
+      "gender": 6
+    },
+    "source_sections_sha256": "dbc0cd933c5b6da21245094ae993bd9b3e079d15ed40f35eb6263c3ccf214ff0"
+  }
+}

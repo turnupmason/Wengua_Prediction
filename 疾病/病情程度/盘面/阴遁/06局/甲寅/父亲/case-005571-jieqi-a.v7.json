@@ -1,0 +1,82 @@
+{
+  "schema_version": "wengua_reading_v1",
+  "record_id": "father-005571-jieqi-a-v7",
+  "physical_chart": {
+    "key": "yin-06-甲寅",
+    "direction": "yin",
+    "ju": 6,
+    "hour_ganzhi": "甲寅"
+  },
+  "source_context": {
+    "scenario_id": 5571,
+    "year": "甲子",
+    "month": "癸酉",
+    "day": "戊申",
+    "hour": "甲寅",
+    "solar_term": "白露",
+    "solar_term_branch": "a",
+    "relationship": "father",
+    "consultation_context": "direct_proxy",
+    "natal_mode": "none",
+    "abstract_scenario": true
+  },
+  "fact_lock": {
+    "original_text_sha256": "72117b19dd1950e9e0d07449398bf1a3535b76b52cb1ec44b83fc3f97e6438b0",
+    "original_evidence_sha256": "8c77eb440454acdcac64d33fbe53746f00b57f87d111079ec07db3094bad5da8",
+    "physical_board_sha256": "af2eef109d568a47437c6a5cfd0b2f26d9a9fc162923e075590e8217a29a6deb",
+    "grade": "极大凶",
+    "score": -5,
+    "patient_symbol": "甲",
+    "patient_source_ganzhi": "甲子",
+    "carrier_stem": "戊",
+    "patient_palace": 6,
+    "rule_engine_source": "BigFish raw 1080 physical board + original frozen V8 result; V8 200-table math not rerun",
+    "source_fact_issue": []
+  },
+  "editorial": {
+    "version": 7,
+    "status": "draft",
+    "human_approved": false,
+    "front_screen": {
+      "banner": "凶局",
+      "title": "极大凶：命悬一线",
+      "text": "病宫在坤二，临死门，又见击刑。父亲年甲在乾六，临开门，天地盘入墓。病宫见击刑，阻力增加，死门主滞，病象不轻。医生宫受制，求医之助有限。综合取凶，阻滞偏久。"
+    },
+    "professional_sections": {
+      "macro": "白露候选，戊申日甲寅时。天显有助，伏吟主慢，吉意不等于速应。",
+      "illness": "天芮居坤二，临死门、六合。见击刑，阻力增加；死门主滞，病象不轻。宫内两组凶格同在。中五寄坤，双格同审。",
+      "patient": "父亲取问测年甲，甲子遁戊定位乾六。开门临宫，尚有通路；天地盘入墓，扶助难展。病宫生父亲宫，不是父亲宫主动制病。天心同宫扶助。",
+      "doctor": "天心居乾六，临开门、螣蛇。双墓难展。病宫生天心，不是天心主动制病。",
+      "medicine": "乙奇居兑七，临惊门、太阴。病宫生乙奇，不是乙奇主动制病。",
+      "hour": "甲寅时，时干在坎宫。时干反映事体动向，按该宫的原有条件参断。",
+      "chief": "值符在坎一，临休门。值符反受病宫所克。值符逢空，护持受限。",
+      "gender": "乾六同时为父亲主用神与男长辈辅助宫，同一实宫只计一次。",
+      "verdict": "病宫在坤二，父亲在乾六。病宫生父亲宫，不是父亲宫主动制病。病宫见击刑，阻力增加。全局定极大凶，个别吉象不能抵消其余失分。",
+      "timing": "天显有助，伏吟主慢，吉意不等于速应。驿马在申；具体应期尚无可核定的冲合条件。"
+    },
+    "note": "v7依用户最新规则压缩：局部宫象和合局总分可不同，不为此认定原判错误；自然重复宫位不当错误；源事实、等级和原始版本不动。程序辅助文案，未经用户正式批准，不进入iOS SQLite。",
+    "reviewer": null,
+    "previous_versions": {
+      "v5": "user_rejected",
+      "v6": "only_seven_curated_examples"
+    }
+  },
+  "source_provenance": {
+    "raw_record_id": "father-005571-jieqi-a",
+    "original_full_reading_sha256": "72117b19dd1950e9e0d07449398bf1a3535b76b52cb1ec44b83fc3f97e6438b0",
+    "source_facts_sha256": "8c77eb440454acdcac64d33fbe53746f00b57f87d111079ec07db3094bad5da8",
+    "physical_sha256": "af2eef109d568a47437c6a5cfd0b2f26d9a9fc162923e075590e8217a29a6deb",
+    "term_only": "甲",
+    "source_v8_recomputed": false,
+    "labels_checked_against_original": true,
+    "explicit_original_roles": {
+      "illness": 2,
+      "doctor": 6,
+      "medicine": 7,
+      "patient": 6,
+      "chief": 1,
+      "gender": 6
+    },
+    "source_sections_sha256": "2ca17af30110b93c8e104c8b5d0e710a6716416da9359d3143a7a5dd6c2ce96c"
+  }
+}

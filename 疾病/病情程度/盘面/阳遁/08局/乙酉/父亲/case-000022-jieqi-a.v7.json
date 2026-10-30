@@ -1,0 +1,82 @@
+{
+  "schema_version": "wengua_reading_v1",
+  "record_id": "father-000022-jieqi-a-v7",
+  "physical_chart": {
+    "key": "yang-08-乙酉",
+    "direction": "yang",
+    "ju": 8,
+    "hour_ganzhi": "乙酉"
+  },
+  "source_context": {
+    "scenario_id": 22,
+    "year": "甲子",
+    "month": "丙寅",
+    "day": "乙丑",
+    "hour": "乙酉",
+    "solar_term": "立春",
+    "solar_term_branch": "a",
+    "relationship": "father",
+    "consultation_context": "direct_proxy",
+    "natal_mode": "none",
+    "abstract_scenario": true
+  },
+  "fact_lock": {
+    "original_text_sha256": "fa31419396c5d29528a5b121b11e24dbe4df90dcb0764c751cee5b013f09795b",
+    "original_evidence_sha256": "7e0b2c84e13b3a3a6ce004d4b8289adfbe7f8377fb5a7ad8bcd07f6cbbca03c4",
+    "physical_board_sha256": "12e65725f509246f2d03a0136b105bc05ef63301e45bb8d38c1c5a07f4629ca1",
+    "grade": "极大凶",
+    "score": -5,
+    "patient_symbol": "甲",
+    "patient_source_ganzhi": "甲子",
+    "carrier_stem": "戊",
+    "patient_palace": 6,
+    "rule_engine_source": "BigFish raw 1080 physical board + original frozen V8 result; V8 200-table math not rerun",
+    "source_fact_issue": []
+  },
+  "editorial": {
+    "version": 7,
+    "status": "draft",
+    "human_approved": false,
+    "front_screen": {
+      "banner": "凶局",
+      "title": "极大凶：命悬一线",
+      "text": "病宫在巽四，临惊门、玄武。父亲年甲在乾六，临伤门，天地盘入墓。病宫门受制，转圜受阻，入墓，病象有滞。医生、医药两宫均有阻滞。综合取凶，应期另看。"
+    },
+    "professional_sections": {
+      "macro": "立春候选，乙丑日乙酉时。不犯五不遇。无整盘伏吟、反吟，不单据此定快慢。",
+      "illness": "天芮居巽四，临惊门、玄武。门受制，转圜受阻；入墓，病象有滞。宫内两组凶格同在。病星外泄，病势有耗。",
+      "patient": "父亲取问测年甲，甲子遁戊定位乾六。天地盘入墓，扶助难展；伤门临宫，承受有损。父亲宫对病宫有克向，实际制约仍看施力条件。",
+      "doctor": "天心居坤二，临休门、九天。逢真空，助力受折；门受迫。天心反受病宫所克。",
+      "medicine": "乙奇居离九，临开门、九地。逢假空，作用未实；门受迫。病宫生乙奇，不是乙奇主动制病。",
+      "hour": "与前述乙奇医药同在离九宫；时干只作事体旁证，不重复计宫。",
+      "chief": "值符在兑七，临生门。值符对病宫有克向，实际制约仍看施力条件。",
+      "gender": "乾六同时为父亲主用神与男长辈辅助宫，同一实宫只计一次。",
+      "verdict": "病宫在巽四，父亲在乾六。父亲宫对病宫有克向，实际制约仍看施力条件。病宫门受制，转圜受阻。全局定极大凶，个别吉象不能抵消其余失分。",
+      "timing": "无整盘伏吟、反吟，不单据此定快慢。驿马在亥；具体应期尚无可核定的冲合条件。"
+    },
+    "note": "v7依用户最新规则压缩：局部宫象和合局总分可不同，不为此认定原判错误；自然重复宫位不当错误；源事实、等级和原始版本不动。程序辅助文案，未经用户正式批准，不进入iOS SQLite。",
+    "reviewer": null,
+    "previous_versions": {
+      "v5": "user_rejected",
+      "v6": "only_seven_curated_examples"
+    }
+  },
+  "source_provenance": {
+    "raw_record_id": "father-000022-jieqi-a",
+    "original_full_reading_sha256": "fa31419396c5d29528a5b121b11e24dbe4df90dcb0764c751cee5b013f09795b",
+    "source_facts_sha256": "7e0b2c84e13b3a3a6ce004d4b8289adfbe7f8377fb5a7ad8bcd07f6cbbca03c4",
+    "physical_sha256": "12e65725f509246f2d03a0136b105bc05ef63301e45bb8d38c1c5a07f4629ca1",
+    "term_only": "甲",
+    "source_v8_recomputed": false,
+    "labels_checked_against_original": true,
+    "explicit_original_roles": {
+      "illness": 4,
+      "doctor": 2,
+      "medicine": 9,
+      "patient": 6,
+      "chief": 7,
+      "gender": 6
+    },
+    "source_sections_sha256": "2fe44b2ff2d8ca7333e1f13b8bb7ddf9ba9eb4ecb9d1c9987c9a5ca7bb7afe77"
+  }
+}

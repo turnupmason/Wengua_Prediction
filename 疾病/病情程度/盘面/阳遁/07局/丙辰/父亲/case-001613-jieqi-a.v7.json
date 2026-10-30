@@ -1,0 +1,82 @@
+{
+  "schema_version": "wengua_reading_v1",
+  "record_id": "father-001613-jieqi-a-v7",
+  "physical_chart": {
+    "key": "yang-07-丙辰",
+    "direction": "yang",
+    "ju": 7,
+    "hour_ganzhi": "丙辰"
+  },
+  "source_context": {
+    "scenario_id": 1613,
+    "year": "甲子",
+    "month": "戊辰",
+    "day": "戊寅",
+    "hour": "丙辰",
+    "solar_term": "清明",
+    "solar_term_branch": "a",
+    "relationship": "father",
+    "consultation_context": "direct_proxy",
+    "natal_mode": "none",
+    "abstract_scenario": true
+  },
+  "fact_lock": {
+    "original_text_sha256": "2e8ce2f5ff4cfc61772cff78ec4d9a3b630e035d3eccab3945cf0009354ada63",
+    "original_evidence_sha256": "be247261e55a123ed6ec6155b43772acf155572a89c5ac37da240bebe28fedde",
+    "physical_board_sha256": "d9acac280b9bc7d41d5f4d4492154b63a0e402b080399f3d2518b537cd1f8b6a",
+    "grade": "微恙",
+    "score": 0,
+    "patient_symbol": "甲",
+    "patient_source_ganzhi": "甲子",
+    "carrier_stem": "戊",
+    "patient_palace": 8,
+    "rule_engine_source": "BigFish raw 1080 physical board + original frozen V8 result; V8 200-table math not rerun",
+    "source_fact_issue": []
+  },
+  "editorial": {
+    "version": 7,
+    "status": "draft",
+    "human_approved": false,
+    "front_screen": {
+      "banner": "不凶不吉",
+      "title": "微恙：病势平缓",
+      "text": "病宫在坎一，临死门，逢真空。父亲年甲在艮八，临惊门。病宫逢真空，病象受削，门受制，转圜受阻。天心、乙奇同在震三，医药同受该宫条件限制。合看为微恙，病势平缓。"
+    },
+    "professional_sections": {
+      "macro": "清明候选，戊寅日丙辰时。不犯五不遇。无整盘伏吟、反吟，不单据此定快慢。",
+      "illness": "天芮居坎一，临死门、六合。逢真空，病象受削；门受制，转圜受阻。两组天地格一吉一凶。",
+      "patient": "父亲取问测年甲，甲子遁戊定位艮八。入墓，行动受束；白虎同临，难得安稳。父亲宫对病宫有克向，实际制约仍看施力条件。",
+      "doctor": "天心居震三，临开门、玄武。门受迫。病宫生天心，不是天心主动制病。",
+      "medicine": "乙奇居震三，临开门、玄武。门受迫。病宫生乙奇，不是乙奇主动制病。与天心同宫，共看此宫，不重复。",
+      "hour": "与前述天芮病宫同在坎一宫；时干只作事体旁证，不重复计宫。",
+      "chief": "值符在坤二，临伤门。值符对病宫有克向，实际制约仍看施力条件。",
+      "gender": "乾六另参父亲长辈环境。临景门，与主用神分开。地盘入墓、门破。",
+      "verdict": "病宫在坎一，父亲在艮八。父亲宫对病宫有克向，实际制约仍看施力条件。各方吉凶相抵，合局为微恙，即不凶不吉。",
+      "timing": "无整盘伏吟、反吟，不单据此定快慢。驿马在寅；具体应期尚无可核定的冲合条件。"
+    },
+    "note": "v7依用户最新规则压缩：局部宫象和合局总分可不同，不为此认定原判错误；自然重复宫位不当错误；源事实、等级和原始版本不动。程序辅助文案，未经用户正式批准，不进入iOS SQLite。",
+    "reviewer": null,
+    "previous_versions": {
+      "v5": "user_rejected",
+      "v6": "only_seven_curated_examples"
+    }
+  },
+  "source_provenance": {
+    "raw_record_id": "father-001613-jieqi-a",
+    "original_full_reading_sha256": "2e8ce2f5ff4cfc61772cff78ec4d9a3b630e035d3eccab3945cf0009354ada63",
+    "source_facts_sha256": "be247261e55a123ed6ec6155b43772acf155572a89c5ac37da240bebe28fedde",
+    "physical_sha256": "d9acac280b9bc7d41d5f4d4492154b63a0e402b080399f3d2518b537cd1f8b6a",
+    "term_only": "甲",
+    "source_v8_recomputed": false,
+    "labels_checked_against_original": true,
+    "explicit_original_roles": {
+      "illness": 1,
+      "doctor": 3,
+      "medicine": 3,
+      "patient": 8,
+      "chief": 2,
+      "gender": 6
+    },
+    "source_sections_sha256": "0d2018ad7cfed894e59d4d4630a1f5f8c92246d77a32b91016ab796ef112f3c4"
+  }
+}

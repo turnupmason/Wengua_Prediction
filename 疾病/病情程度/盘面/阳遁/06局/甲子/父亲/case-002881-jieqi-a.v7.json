@@ -1,0 +1,82 @@
+{
+  "schema_version": "wengua_reading_v1",
+  "record_id": "father-002881-jieqi-a-v7",
+  "physical_chart": {
+    "key": "yang-06-甲子",
+    "direction": "yang",
+    "ju": 6,
+    "hour_ganzhi": "甲子"
+  },
+  "source_context": {
+    "scenario_id": 2881,
+    "year": "甲子",
+    "month": "庚午",
+    "day": "甲子",
+    "hour": "甲子",
+    "solar_term": "芒种",
+    "solar_term_branch": "a",
+    "relationship": "father",
+    "consultation_context": "direct_proxy",
+    "natal_mode": "none",
+    "abstract_scenario": true
+  },
+  "fact_lock": {
+    "original_text_sha256": "d3527d530906776edc1d58f87401e2b1a7a0b65abe3c5791d5b1c46d979e7ac7",
+    "original_evidence_sha256": "65f704d4e9ab3e32e0f6f490ab3a7982d2e7b87e841a997747290aa1eab8d074",
+    "physical_board_sha256": "16ee7bf715c44302058f822486ac48ccbf05c148f85e136f19e9851f8b9fd72f",
+    "grade": "极大吉",
+    "score": 5,
+    "patient_symbol": "甲",
+    "patient_source_ganzhi": "甲子",
+    "carrier_stem": "戊",
+    "patient_palace": 6,
+    "rule_engine_source": "BigFish raw 1080 physical board + original frozen V8 result; V8 200-table math not rerun",
+    "source_fact_issue": []
+  },
+  "editorial": {
+    "version": 7,
+    "status": "draft",
+    "human_approved": false,
+    "front_screen": {
+      "banner": "吉局",
+      "title": "极大吉：沉疴顿愈",
+      "text": "父亲年甲在乾六，临开门、值符。病宫在坤二，临死门。病星外泄，病势有耗；病宫有乙奇扶助。医生、医药两宫均有阻滞。综合取吉，进展偏缓。"
+    },
+    "professional_sections": {
+      "macro": "芒种候选，甲子日甲子时。不犯五不遇。天显有助，伏吟主慢，吉意不等于速应。",
+      "illness": "天芮居坤二，临死门、九地。死门主滞，病象不轻。宫内两组凶格同在。中五寄坤，双格同审。病星外泄，病势有耗；病宫有乙奇扶助。",
+      "patient": "父亲取问测年甲，甲子遁戊定位乾六。值符同守，有扶持；开门临宫，尚有通路。病宫生父亲宫，不是父亲宫主动制病。",
+      "doctor": "天心居乾六，临开门、值符。逢真空，助力受折；双墓难展。病宫生天心，不是天心主动制病。",
+      "medicine": "乙奇居坤二，临死门、九地。双墓难展；死门阻滞。乙奇与病宫同处一宫，得失相连。",
+      "hour": "与前述天心医生同在乾六宫；时干只作事体旁证，不重复计宫。",
+      "chief": "值符与父亲同在乾六，扶持归该宫，不另立宫。值符逢空，护持受限。",
+      "gender": "乾六同时为父亲主用神与男长辈辅助宫，同一实宫只计一次。",
+      "verdict": "病宫在坤二，父亲在乾六。病宫生父亲宫，不是父亲宫主动制病。病星外泄，病势有耗；病宫有乙奇扶助。全局定极大吉，不因单宫受克就改级。",
+      "timing": "天显有助，伏吟主慢，吉意不等于速应。驿马在寅；具体应期尚无可核定的冲合条件。"
+    },
+    "note": "v7依用户最新规则压缩：局部宫象和合局总分可不同，不为此认定原判错误；自然重复宫位不当错误；源事实、等级和原始版本不动。程序辅助文案，未经用户正式批准，不进入iOS SQLite。",
+    "reviewer": null,
+    "previous_versions": {
+      "v5": "user_rejected",
+      "v6": "only_seven_curated_examples"
+    }
+  },
+  "source_provenance": {
+    "raw_record_id": "father-002881-jieqi-a",
+    "original_full_reading_sha256": "d3527d530906776edc1d58f87401e2b1a7a0b65abe3c5791d5b1c46d979e7ac7",
+    "source_facts_sha256": "65f704d4e9ab3e32e0f6f490ab3a7982d2e7b87e841a997747290aa1eab8d074",
+    "physical_sha256": "16ee7bf715c44302058f822486ac48ccbf05c148f85e136f19e9851f8b9fd72f",
+    "term_only": "甲",
+    "source_v8_recomputed": false,
+    "labels_checked_against_original": true,
+    "explicit_original_roles": {
+      "illness": 2,
+      "doctor": 6,
+      "medicine": 2,
+      "patient": 6,
+      "chief": 6,
+      "gender": 6
+    },
+    "source_sections_sha256": "e3824e7caaea16398dd76246ba4b556884596378b06f9275192a36fe2b0c0199"
+  }
+}
