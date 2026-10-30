@@ -25,7 +25,7 @@ def plan_path(board, relation, serial, branch):
     return (pathlib.Path("疾病")/"病情程度"/"盘面"/
             ("阳遁" if dun=="yang" else "阴遁")/(ju+"局")/
             hour / RELATION_DIR.get(relation,relation) /
-            ("case-%06d-jieqi-%s.v1.json" % (int(serial),branch))).as_posix()
+            ("case-%06d-jieqi-%s.v9.json" % (int(serial),branch))).as_posix()
 
 def from_csv(path):
     with path.open(newline="",encoding="utf-8-sig") as fp:
