@@ -1,0 +1,80 @@
+{
+  "report_version": "wengua_father_complete_archive_acceptance_2026-10-30",
+  "uploaded_source": {
+    "filename": "Father.zip",
+    "sha256": "c5c1188253583510d4a87da8a16c945e61c99b4c7f2c6ff60ec77b0cc0c08473",
+    "excel_parts": 87,
+    "numbered_cases": 518400,
+    "range": "1..518400",
+    "no_number_gaps": true,
+    "first_workbook_sha256": "52474005292ea39c99151db1788523f9f338dfd964c0e94ad1fc66fb048472cf",
+    "columns_per_workbook": 43,
+    "contains_jieqi_a_and_b": true,
+    "abstract_four_pillars_not_gregorian_dates": true
+  },
+  "physical_source": {
+    "filename": "1080(1).zip",
+    "sha256": "c4232ae247bbf6f9ac8d23500e99f688c6d97b5c044c2801c85dc34d12cb2922",
+    "true_unique_palace_jsons": 1080,
+    "source_commit": "6112b3937d7fcaa2ab0a34aec2a52f74e2effe6c",
+    "each_verified_has_nine_palaces": true
+  },
+  "verified": {
+    "selected_branch": "甲",
+    "original_score_grade_mismatches": 0,
+    "missing_sha": 0,
+    "missing_boards_a": 0,
+    "missing_boards_b": 0,
+    "invalid_four_pillars": 0,
+    "invalid_user_role": 0,
+    "nonempty_original_texts_a": 518400,
+    "full_ten_chapter_text_patterns_checked": 38016,
+    "ten_chapter_missing_patterns": 0,
+    "independent_sha_a": 518400,
+    "independent_sha_b": 518400,
+    "distinct_physical_boards_a": 1080,
+    "distinct_physical_boards_b": 1080,
+    "six_jia_or_literal_heaven_carrier_patient_palaces_matched_a": 518400,
+    "six_jia_or_literal_heaven_carrier_patient_palaces_matched_b": 518400,
+    "role_palace_mismatches": 0,
+    "sqlite_integrity_check": "ok"
+  },
+  "exact_original_reading_groups": {
+    "count": 38016,
+    "membership_total": 518400,
+    "source_text_equality_only": true,
+    "reduction_factor": 13.6364,
+    "members_per_group_distribution": {
+      "2": 4608,
+      "4": 9504,
+      "8": 576,
+      "12": 7776,
+      "24": 15552
+    },
+    "text_groups_with_diverging_board_month_grade_score_patient_stem_palace": 0,
+    "evidence_sha_still_independent_for_each_member": true
+  },
+  "pilot": {
+    "groups": 220,
+    "case_identities": 872,
+    "distinct_bigfish_boards": 203,
+    "chosen_20_per_11_verdict_classes": true,
+    "file_sha256": "093fd60859e5a0c5ffcf85e30e9d913a1cf7e4c1248f57011f0e9e378f923ad3",
+    "pilot_contains_original_source_text_and_1080_board_subsets": true,
+    "editorial_texts_generated": 0
+  },
+  "all_groups_csv_sha256": "e645ac68cdcdcbb9e483548597fd1c0259ec20594c73236c85f88980bd531f76",
+  "ingress_script_sha256": "a379e2f7e4c418d3b6361f867e603af4b8efdd13a7a05e8a9b7c4b355e05b762",
+  "scope": "First edit JieQi A for father, natal None. JieQi B preserved original and not edited.",
+  "full_quant_fact_lock_from_mac_jsonl_provided": false,
+  "caution": "Excel contains V8 original ten-section reports, SHA, grade, role binding and source board. It does not contain the full original JSONL frozen_fact_lock (200-grid power/role gates) as a structured object. Do not invent missing quantitative details; use only evidenced conclusions.",
+  "editing_state": {
+    "v9_curated_drafts_preexisting": 20,
+    "new_literary_readings_since_upload": 0,
+    "remaining_of_original_first_6000": 5980,
+    "source_records_ingested": 518400,
+    "approved_for_ios": 0
+  },
+  "releases": "All newly prepared review groups are source tasks, not completed articles. Exact original report equality does not authorize copying another case's literary reading; separate source identities/SHAs stay linked.",
+  "privacy": "Raw original Excel text, full 518400 source SQLite and pilot source review pack are retained in conversation artifacts, not uploaded into public GitHub as mass user data."
+}
