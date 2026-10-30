@@ -1,0 +1,82 @@
+{
+  "schema_version": "wengua_reading_v1",
+  "record_id": "father-000024-jieqi-a-v9",
+  "physical_chart": {
+    "key": "yang-08-丁亥",
+    "direction": "yang",
+    "ju": 8,
+    "hour_ganzhi": "丁亥"
+  },
+  "source_context": {
+    "scenario_id": 24,
+    "year": "甲子",
+    "month": "丙寅",
+    "day": "乙丑",
+    "hour": "丁亥",
+    "solar_term": "立春",
+    "solar_term_branch": "a",
+    "relationship": "father",
+    "consultation_context": "direct_proxy",
+    "natal_mode": "none",
+    "abstract_scenario": true
+  },
+  "fact_lock": {
+    "original_text_sha256": "37a1d66047b1959ee6c0ad69b6a6c1097edec425e315bd50dd9660e7ec9e0f2d",
+    "original_evidence_sha256": "f5a232a3a4a440f4035ac7d492d907d2436b695d288814ae7ac7e816008658d8",
+    "grade": "大吉",
+    "score": 4,
+    "patient_symbol": "甲",
+    "patient_source_ganzhi": "甲子",
+    "carrier_stem": "戊",
+    "patient_palace": 7,
+    "rule_engine_source": "BigFish actual 1080 JSON and user-uploaded Father.zip frozen V8; math not rerun",
+    "source_fact_issue": []
+  },
+  "editorial": {
+    "version": 9,
+    "status": "draft",
+    "human_approved": false,
+    "front_screen": {
+      "banner": "吉局",
+      "title": "大吉：邪退正复",
+      "text": "父亲这次病情虽有较明显的阻碍，但全盘仍有向好的条件。病情所在之处有干扰，恢复路上难免受牵制；好在病势存在消耗，父亲自身也保留了制约疾病的方向，因此不宜只看见凶象就断前景全无。\n\n父亲所在的位置有一定扶持，却同时遭到通路阻碍。他与疾病两处所在位置有克制关系，从方向上说能够牵制病势；但这份作用能否充分发挥，还要看父亲自身受限的情况，不能说成已经控制了病情。\n\n疾病这一边既有阻隔，又有不利的内部组合，局中牵扰并未散尽。不过病的力量在向外耗散，另有可缓和病势的条件，所以此处并非完全没有转圜余地。好的因素和坏的因素，都应一并承认。\n\n医生一端看得见帮助恢复的条件，然而位置落空，没有形成直接克病；药物一端的处境相对较好，却与疾病保持相近关系，同样并非主动压病。医药可以提供某种帮助，但不能据此保证马上见效。\n\n当前事情的发展与疾病落在同一位置，眼下的变化仍紧绕病情。另一股扶持力量虽然出现，却受到落空和阻碍；男性长辈辅助位置另有受困的情形，不能把这些看成毫无条件的外援。\n\n合看各方，父亲有制病方向，病势有耗泄和缓和条件，全盘仍属大吉。只是父亲、医药、辅助各有局限，尚不能凭这一局断定恢复速度，更不能给出确定日期。"
+    },
+    "professional_sections": {
+      "macro": "立春甲候选，乙丑日丁亥时，不犯五不遇。未见整盘伏吟反吟，速度须另待真实冲合条件。",
+      "illness": "天芮在震三，开门、玄武同宫，辛加壬「凶蛇入狱」凶、丁加壬「五神互合」吉，且门破。病星有耗泄，丁奇亦可缓和，但门破不应忽略。",
+      "patient": "父亲年甲子之甲按甲子遁戊定位兑七，临杜门、螣蛇，戊加乙「青龙合灵」有吉而门迫。兑金克震木，有制病方向，须同时看自身门迫和有效条件。",
+      "doctor": "天心落离九，生门、九天同临，丙加己「火孛入刑」为凶，且假空。震木生离火，病宫生医生宫，不是天心主动克病。",
+      "medicine": "乙奇在巽四，休门、九地同临，乙加癸「华盖青龙」有吉，驿马亦在此；巽震两木比和，药物未形成直接克病之势。",
+      "hour": "时干丁落震三，与病宫相连；所问事体的进退要从震三门破及病星耗泄的两面理解。",
+      "chief": "值符居坤二，伤门，庚加辛「白虎干格」和庚加丁「亭亭之格」均不利，且真空、门破；吉神所在位置难以提供无条件支持。",
+      "gender": "乾六作男性长辈辅助，临景门、太阴，壬加丙「水蛇入火」有凶意，门破和地盘入墓亦属实际限制。",
+      "verdict": "震三病宫虽门破且有凶格，却有病势耗泄和丁奇缓和；父亲兑七有金克木方向，药宫巽四有华盖青龙，但医生假空、值符及乾六辅助受限。合原局为大吉。",
+      "timing": "驿马在巳，其他冲合依据未明确；无伏吟反吟可作确定快慢依据，不断具体病愈日。"
+    },
+    "professional_section_titles": {
+      "macro": "时局与变化节奏",
+      "illness": "疾病本身的阻碍",
+      "patient": "父亲自身的处境",
+      "doctor": "医生与求医条件",
+      "medicine": "药物能起多大作用",
+      "hour": "当前事情的发展",
+      "chief": "父亲得到的扶持",
+      "gender": "男性长辈的辅助判断",
+      "verdict": "综合判断",
+      "timing": "好转时间与条件"
+    },
+    "note": "首次对用户2026-10-30正式上传 Father.zip 及1080原盘逐案写作；原吉凶及两SHA锁来自Excel。人话六角色+十章，不展示后台记分。候选稿未获人工批准，不纳入iOS SQLite。",
+    "reviewer": null,
+    "approval_required": true
+  },
+  "source_provenance": {
+    "raw_record_id": "father-000024-jieqi-a",
+    "original_full_reading_sha256": "37a1d66047b1959ee6c0ad69b6a6c1097edec425e315bd50dd9660e7ec9e0f2d",
+    "source_facts_sha256": "f5a232a3a4a440f4035ac7d492d907d2436b695d288814ae7ac7e816008658d8",
+    "term_only": "甲",
+    "source_v8_recomputed": false,
+    "labels_checked_against_original": true,
+    "source_workbook": "father_000001-006000.xlsx",
+    "source_archive": "Father.zip"
+  }
+}
