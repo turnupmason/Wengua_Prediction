@@ -200,8 +200,14 @@ def validate_boards(db, boards_root):
         try:
             with file.open(encoding="utf-8") as f:
                 payload = json.load(f)
-            if not isinstance(payload, dict) or not payload:
-                raise ValueError("empty or invalid board")
+            if not isinstance(payload, dict) or payload.get("physical_id") != board:
+                raise ValueError("wrong BigFish physical ID")
+            if payload.get("hour_ganzhi") != board[-2:] or payload.get("dun") != board.split("-")[0]:
+                raise ValueError("wrong BigFish hour/direction")
+            if not isinstance(payload.get("palaces"), (dict, list)) or len(payload["palaces"]) != 9:
+                raise ValueError("missing nine genuine palaces")
+            if not isinstance(payload.get("source_original_raw"), dict):
+                raise ValueError("missing upstream BigFish source chart")
             present[board] = {"path": str(file.resolve()), "sha256": hash_file(file)}
         except (ValueError, UnicodeDecodeError, OSError):
             missing.append(board)
@@ -249,7 +255,9 @@ def export(db, output, board_profiles, batch_size, branch, source_count, stage_s
                ORDER BY board, signature, relationship, case_idx"""
     for board, signature, grade, packed in db.execute(query):
         if board != active_board:
-            flush(active_board, buffer, part)
+            if buffer:
+                part += 1
+                flush(active_board, buffer, part)
             active_board, buffer, part = board, [], 0
         case = json.loads(zlib.decompress(packed))
         case["board_source"] = board_profiles[board]
