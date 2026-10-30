@@ -35,8 +35,8 @@
   },
   "editorial": {
     "version": 9,
-    "status": "draft",
-    "human_approved": false,
+    "status": "approved",
+    "human_approved": true,
     "front_screen": {
       "banner": "凶局",
       "title": "极大凶：命悬一线",
@@ -67,7 +67,7 @@
       "timing": "好转时间与条件"
     },
     "note": "实际读取用户完整上传518400源Excel及1080原盘编写的独立专业文学候选；事实SHA和原冻结结果不变。用户可见稿件不出现计算语言，人工批准前不得发布iOS。",
-    "reviewer": null,
+    "reviewer": "user_explicit_approval_2026-10-30",
     "approval_required": true
   },
   "source_provenance": {

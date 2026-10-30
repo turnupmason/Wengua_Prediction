@@ -35,8 +35,8 @@
   },
   "editorial": {
     "version": 9,
-    "status": "draft",
-    "human_approved": false,
+    "status": "approved",
+    "human_approved": true,
     "front_screen": {
       "banner": "凶局",
       "title": "大凶：病势危重",
@@ -67,7 +67,7 @@
       "timing": "好转时间与条件"
     },
     "note": "按用户已确认文风逐案重写，历史v7仅作事实锁来源；未复算冻结200格源力，保持draft且未获iOS批准。",
-    "reviewer": null
+    "reviewer": "user_explicit_approval_2026-10-30"
   },
   "source_provenance": {
     "raw_record_id": "father-000006-jieqi-a",

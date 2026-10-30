@@ -11,11 +11,30 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Verify user-approved style, real source locks and draft publication gate
+      - name: Verify literary style, source locks, explicit 30-case approval and publication gate
         run: |
           python3 -m unittest discover -s tests -v
           python3 tools/check_reader_style.py
           python3 -m py_compile tools/build_offline_catalog.py tools/verify_imported_bigfish_sources.py tools/plan_board_groups.py tools/render_reading_zh.py
-      - name: Build zero-approved local test catalog
+      - name: Build exactly 30 user-approved readings into offline SQLite
         run: |
-          python3 tools/build_offline_catalog.py --root . --out /tmp/test_readings.sqlite
+          python3 tools/build_offline_catalog.py --root . --out build/father_a_approved_000001-000030.sqlite
+          python3 - <<'PY'
+          import json,sqlite3
+          p='build/father_a_approved_000001-000030.sqlite'
+          m=json.load(open(p.replace('.sqlite','.manifest.json'),encoding='utf-8'))
+          assert m['approved_count']==30 and m['user_signed_approval_entries']==30
+          with sqlite3.connect(p) as db:
+              assert db.execute('select count(*) from readings').fetchone()[0]==30
+              assert db.execute('pragma integrity_check').fetchone()[0]=='ok'
+          PY
+      - name: Upload first 30 explicitly approved offline readings and SHA manifest
+        if: github.event_name == 'push'
+        uses: actions/upload-artifact@v4
+        with:
+          name: father-a-v9-approved-first30
+          path: |
+            build/father_a_approved_000001-000030.sqlite
+            build/father_a_approved_000001-000030.manifest.json
+          if-no-files-found: error
+          retention-days: 90

@@ -42,7 +42,7 @@ class UploadedSourceWritingTests(unittest.TestCase):
                 self.assertEqual(lock["patient_palace"],palace)
                 self.assertEqual((lock["patient_symbol"],lock["patient_source_ganzhi"],lock["carrier_stem"]),("甲","甲子","戊"))
                 self.assertEqual(ed["version"],9)
-                self.assertEqual((ed["status"],ed["human_approved"]),("draft",False))
+                self.assertEqual((ed["status"],ed["human_approved"]),("approved",True))
                 self.assertEqual(set(ed["professional_sections"]),SECTIONS)
                 self.assertEqual(set(ed["professional_section_titles"]),SECTIONS)
                 self.assertTrue(all(len(v.strip())>=35 for v in ed["professional_sections"].values()))

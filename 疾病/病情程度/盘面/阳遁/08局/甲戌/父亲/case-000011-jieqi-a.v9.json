@@ -35,8 +35,8 @@
   },
   "editorial": {
     "version": 9,
-    "status": "draft",
-    "human_approved": false,
+    "status": "approved",
+    "human_approved": true,
     "front_screen": {
       "banner": "吉局",
       "title": "极大吉：沉疴顿愈",
@@ -67,7 +67,7 @@
       "timing": "好转时间与条件"
     },
     "note": "参考用户确认的第一屏标准逐案创作。仅用历史数据原始身份/四柱/角色/证据 SHA 与原冻结等级核对，不恢复历史断词；仍draft，不属于iOS发布稿。",
-    "reviewer": null
+    "reviewer": "user_explicit_approval_2026-10-30"
   },
   "source_provenance": {
     "raw_record_id": "father-000011-jieqi-a",

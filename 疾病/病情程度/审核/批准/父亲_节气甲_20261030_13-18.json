@@ -1,0 +1,63 @@
+{
+  "schema": "wengua_editorial_explicit_user_approval_v1",
+  "approval_id": "father_a_first30_2026-10-30",
+  "approved_on": "2026-10-30",
+  "reviewer": "user_explicit_approval_2026-10-30",
+  "scope": "father JieQi A case 000001-000030 v9 only",
+  "cases": [
+    {
+      "case_id": 13,
+      "record_id": "father-000013-jieqi-a-v9",
+      "approved_source_git_blob_sha1": "d6b3dc9f80318df8fb26a08dd87c11bdaa914840",
+      "source_evidence_sha256": "4da4396ee1cb051888071615e7d1978243eb9a2865a9b2ba79b2b33ab433c09e",
+      "physical_board_sha256": "c2920cb6ccb1385700d06860117a3b1726d7e23ac729106c8566cae435a24378",
+      "grade": "小吉",
+      "score": 2
+    },
+    {
+      "case_id": 14,
+      "record_id": "father-000014-jieqi-a-v9",
+      "approved_source_git_blob_sha1": "acfad31b6f9953ba3838f22e28df7c43e662d2b3",
+      "source_evidence_sha256": "eb0b1f9fbf6edf2d1faf1e3d6164cb99537a902fc2855a992d2a61dbde109fc6",
+      "physical_board_sha256": "80d40f072771d6ed88992ca0d9f3e54c7560d3ae9bfd3118b02086aa7ea39a19",
+      "grade": "中吉",
+      "score": 3
+    },
+    {
+      "case_id": 15,
+      "record_id": "father-000015-jieqi-a-v9",
+      "approved_source_git_blob_sha1": "77d69d6e2992fa288547e076b1735d4d3aa27719",
+      "source_evidence_sha256": "003b55f450ec3b9798eb59ac2b3e0724236f11eb4b261ee6dc5f67181983465c",
+      "physical_board_sha256": "74d2a1030554c78539d74a2fcd539128d9f4755c18d325a51a7363572f221b1b",
+      "grade": "极小吉",
+      "score": 1
+    },
+    {
+      "case_id": 16,
+      "record_id": "father-000016-jieqi-a-v9",
+      "approved_source_git_blob_sha1": "7a7a7c33c97bf90267c6637e521d598e40e29787",
+      "source_evidence_sha256": "0d657ff1f699e952e8715e46c93a51cc919570ac9f98cd8a7dca8395a9ce34ce",
+      "physical_board_sha256": "eaa9865a6c11333f85a42bcb04070d4bb426f841f9f964434795d33e0e11e1c2",
+      "grade": "极大吉",
+      "score": 5
+    },
+    {
+      "case_id": 17,
+      "record_id": "father-000017-jieqi-a-v9",
+      "approved_source_git_blob_sha1": "9c4b645a1be5381c81845030de6333a55cf41d0c",
+      "source_evidence_sha256": "cdc4a3f8cd33a877bca49a1a20baa58387bf73f7f19a897c2b39c46a825bd81a",
+      "physical_board_sha256": "27086765d9d45bbfc7ff38c0921181b7daed12e5a2d935a372dfacfb26e7cade",
+      "grade": "极大凶",
+      "score": -5
+    },
+    {
+      "case_id": 18,
+      "record_id": "father-000018-jieqi-a-v9",
+      "approved_source_git_blob_sha1": "09ff097ff7e6fb52536fe580d74d03f816e085f3",
+      "source_evidence_sha256": "a05e55daaa913574a8283bace9d1312bb96473a99f454b42dd19ac2da2b90baf",
+      "physical_board_sha256": "9ee781465f67ccf2b64386f32324b0b8f0caea7aeb6f8fb7036e159d3cc0e742",
+      "grade": "极大凶",
+      "score": -5
+    }
+  ]
+}

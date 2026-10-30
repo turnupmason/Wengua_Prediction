@@ -35,8 +35,8 @@
   },
   "editorial": {
     "version": 9,
-    "status": "draft",
-    "human_approved": false,
+    "status": "approved",
+    "human_approved": true,
     "front_screen": {
       "banner": "凶局",
       "title": "极大凶：命悬一线",
@@ -67,7 +67,7 @@
       "timing": "好转时间与条件"
     },
     "note": "本稿按用户确认的第一屏自然断案和第二屏十章独立精写；所有内部计算只留后台元数据，用户可见文本不解释计分。原盘/等级/来源SHA未改；未经人工批准不进入iOS。",
-    "reviewer": null
+    "reviewer": "user_explicit_approval_2026-10-30"
   },
   "source_provenance": {
     "raw_record_id": "father-000017-jieqi-a",

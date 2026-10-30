@@ -35,8 +35,8 @@
   },
   "editorial": {
     "version": 9,
-    "status": "draft",
-    "human_approved": false,
+    "status": "approved",
+    "human_approved": true,
     "front_screen": {
       "banner": "吉局",
       "title": "极大吉：沉疴顿愈",
@@ -67,7 +67,7 @@
       "timing": "好转时间与条件"
     },
     "note": "2026-10-29 用户逐字确认首页示范，后续全域本关系/其他关系同质量语体但独立依据创作。第二屏保留十个中文标题并使用真实专业术语。全旧文学稿已按用户要求从main现行树下架；历史审稿SHA、证据索引和Git历史仍可追溯。本稿尚未人工批准，不进入离线iOS。冻结V8.0引擎不改，未重跑200格和跨宫5x5。",
-    "reviewer": null,
+    "reviewer": "user_explicit_approval_2026-10-30",
     "approval_required": true
   },
   "source_provenance": {

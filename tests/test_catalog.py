@@ -39,7 +39,7 @@ class ReadingContractTests(unittest.TestCase):
         seen=set()
         for path in paths:
             data=json.loads(path.read_text(encoding="utf-8"))
-            self.assertFalse(validate(data,path,ROOT))
+            self.assertTrue(validate(data,path,ROOT))
             n=data["source_context"]["scenario_id"]
             self.assertTrue(1<=n<=518400)
             self.assertNotIn(n,seen)
@@ -51,8 +51,9 @@ class ReadingContractTests(unittest.TestCase):
             self.assertEqual(data["fact_lock"]["patient_symbol"],"甲")
             self.assertEqual(data["fact_lock"]["patient_source_ganzhi"],"甲子")
             self.assertEqual(data["fact_lock"]["carrier_stem"],"戊")
-            self.assertEqual(data["editorial"]["status"],"draft")
-            self.assertFalse(data["editorial"]["human_approved"])
+            self.assertEqual(data["editorial"]["status"],"approved")
+            self.assertTrue(data["editorial"]["human_approved"])
+            self.assertEqual(data["editorial"]["reviewer"],"user_explicit_approval_2026-10-30")
             self.assertEqual(data["editorial"]["version"],9)
             self.assertEqual(data["editorial"]["front_screen"]["title"].split("：")[0],data["fact_lock"]["grade"])
             self.assertEqual(data["fact_lock"]["score"],GRADE_SCORE[data["fact_lock"]["grade"]])
@@ -71,13 +72,14 @@ class ReadingContractTests(unittest.TestCase):
 
         self.assertTrue(set(range(1,26)).issubset(seen))
 
-    def test_no_draft_enters_offline_catalogue(self):
+    def test_only_30_explicitly_approved_readings_enter_offline_catalogue(self):
         with tempfile.TemporaryDirectory() as td:
             out=pathlib.Path(td)/"readings.sqlite"
             report=build(ROOT,out)
-            self.assertEqual(report["approved_count"],0)
+            self.assertEqual(report["approved_count"],30)
             with sqlite3.connect(out) as db:
-                self.assertEqual(db.execute("SELECT COUNT(*) FROM readings").fetchone()[0],0)
+                self.assertEqual(db.execute("SELECT COUNT(*) FROM readings").fetchone()[0],30)
+                self.assertEqual({int(r[0].split("-")[1]) for r in db.execute("SELECT record_id FROM readings")},set(range(1,31)))
                 self.assertEqual(db.execute("PRAGMA integrity_check").fetchone()[0],"ok")
             with self.assertRaises(FileExistsError):
                 build(ROOT,out)
@@ -85,9 +87,20 @@ class ReadingContractTests(unittest.TestCase):
     def test_signoff_cannot_be_forged(self):
         file=next(BOARD.rglob("case-000001-jieqi-a.v9.json"))
         d=json.loads(file.read_text(encoding="utf-8"))
-        d["editorial"]["status"]="approved"
         d["editorial"]["human_approved"]=False
         with self.assertRaises(AssertionError):validate(d,file,ROOT)
+
+    def test_approved_text_is_byte_locked_and_future_draft_is_not_published(self):
+        file=next(BOARD.rglob("case-000001-jieqi-a.v9.json"))
+        original=json.loads(file.read_text(encoding="utf-8"))
+        tampered=json.loads(json.dumps(original,ensure_ascii=False))
+        tampered["editorial"]["front_screen"]["text"] += "新增未经用户审定的一句话"
+        with self.assertRaises(AssertionError): validate(tampered,file,ROOT)
+        future_draft=json.loads(json.dumps(original,ensure_ascii=False))
+        future_draft["editorial"]["status"]="draft"
+        future_draft["editorial"]["human_approved"]=False
+        future_draft["editorial"]["reviewer"]=None
+        self.assertFalse(validate(future_draft,file,ROOT))
 
     def test_same_board_does_not_allow_reusing_other_case(self):
         self.assertNotEqual(plan_path("yang-08-甲子","father",1,"a"),

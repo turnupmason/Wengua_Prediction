@@ -35,8 +35,8 @@
   },
   "editorial": {
     "version": 9,
-    "status": "draft",
-    "human_approved": false,
+    "status": "approved",
+    "human_approved": true,
     "front_screen": {
       "banner": "吉局",
       "title": "极大吉：沉疴顿愈",
@@ -67,7 +67,7 @@
       "timing": "好转时间与条件"
     },
     "note": "首次对用户2026-10-30正式上传 Father.zip 及1080原盘逐案写作；原吉凶及两SHA锁来自Excel。人话六角色+十章，不展示后台记分。候选稿未获人工批准，不纳入iOS SQLite。",
-    "reviewer": null,
+    "reviewer": "user_explicit_approval_2026-10-30",
     "approval_required": true
   },
   "source_provenance": {

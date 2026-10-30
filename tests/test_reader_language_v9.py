@@ -31,8 +31,12 @@ class UserApprovedStyleTests(unittest.TestCase):
   self.assertEqual(rendered.count("\n## "),10)
   for key in SECTION_ORDER:self.assertIn("## "+SECTION_LABELS[key],rendered)
  def test_approval_guard(self):
-  self.assertEqual(self.r["editorial"]["status"],"draft")
-  self.assertFalse(self.r["editorial"]["human_approved"])
+  self.assertEqual(self.r["editorial"]["status"],"approved")
+  self.assertTrue(self.r["editorial"]["human_approved"])
+  self.assertEqual(render_chinese_reading(self.r,draft_preview=False), render_chinese_reading(self.r))
+  other=json.loads(json.dumps(self.r,ensure_ascii=False))
+  other["editorial"]["status"]="draft"
+  other["editorial"]["human_approved"]=False
   with self.assertRaises(PermissionError):
-   render_chinese_reading(self.r,draft_preview=False)
+   render_chinese_reading(other,draft_preview=False)
 if __name__=="__main__":unittest.main()
