@@ -1,0 +1,91 @@
+{
+  "schema_version": "wengua_reading_v1",
+  "record_id": "father-000001-jieqi-a-v9",
+  "physical_chart": {
+    "key": "yang-08-甲子",
+    "direction": "yang",
+    "ju": 8,
+    "hour_ganzhi": "甲子"
+  },
+  "source_context": {
+    "scenario_id": 1,
+    "year": "甲子",
+    "month": "丙寅",
+    "day": "甲子",
+    "hour": "甲子",
+    "solar_term": "立春",
+    "solar_term_branch": "a",
+    "relationship": "father",
+    "consultation_context": "direct_proxy",
+    "natal_mode": "none",
+    "abstract_scenario": true
+  },
+  "fact_lock": {
+    "original_text_sha256": "657ef2faf4bd22de827d4ce17ae58fae767fa16024165ddc746c7394391851d1",
+    "original_evidence_sha256": "16ddb33de2fd9339b9b54bbef57b89216c9629495bebc8f9dfa338f6db43acfb",
+    "physical_board_sha256": "332d457553f78065c84261c0cfcaca961d641e9d075a6f776f07b3237fb432ae",
+    "grade": "极大吉",
+    "score": 5,
+    "patient_symbol": "甲",
+    "patient_source_ganzhi": "甲子",
+    "carrier_stem": "戊",
+    "patient_palace": 8,
+    "rule_engine_source": "BigFish raw 1080 physical board + original frozen V8 result; V8 200-table math not rerun",
+    "source_fact_issue": []
+  },
+  "editorial": {
+    "version": 9,
+    "status": "draft",
+    "human_approved": false,
+    "front_screen": {
+      "banner": "吉局",
+      "title": "极大吉：沉疴顿愈",
+      "text": "父亲这次的病情，虽然有较明显的阻碍，但整体恢复前景仍然有利。\n\n先看父亲自身。他所在的位置有利于恢复，又有一层扶持，说明父亲并非完全被病势牵着走，自身仍有可以依靠的有利条件。这是本局判断向好的重要原因。\n\n再看疾病本身。病情所在的位置却不理想，既有病势难以松动的迹象，也有较重的干扰，说明恢复途中并非没有困难。所幸这一处还带有缓和病势的条件，因此不能只看见不利的一面，就认定病情必然加重。\n\n医生与药物也要分开判断。医生这一边虽然有求医的机会，但发挥作用的条件受到较多限制；药物这一边同样没有形成直接压制病势的局面。由此看来，不能把本局的吉利简单理解为求医用药马上见效。\n\n再看事情的发展，代表当前病情变化的线索与父亲自身落在同一位置，说明这件事的进退与父亲自身的处境紧密相关。另外，专门观察男性长辈的位置，也受到与医生相同的限制，不能额外算作一股新的助力。\n\n综合各方面，虽然疾病有阻碍、医药帮助有限，但父亲自身有较好的支撑，病情所在之处也有缓和条件，全盘最终仍属极大吉。 只是局势显示变化较慢，好转未必迅速，不宜急着判断何时康复。"
+    },
+    "professional_sections": {
+      "macro": "立春候选，甲子日甲子时，不犯五不遇时，且遇天显时，有利于全盘。伏吟同时出现，主事情运行迟缓。天显助势不等于立即好转，不能把吉利误写成速应。",
+      "illness": "病星天芮落坤二，死门、白虎同宫，是病势滞碍、外在干扰偏重的依据。中五寄坤，病宫须同时审辛加辛「伏吟天庭」与丁加丁「奇入太阴」两组天地盘格局，一凶一吉；天禽所携丁奇可作缓解病象的有利因素。坤二病宫不空，但有丁奇也不等于病势已被医药直接压制。",
+      "patient": "父亲以问测年柱甲子之年干甲为主用神，甲子遁戊仅用于定位，携干落艮八；不能将甲的200格源力量替换为戊。艮八临生门、值符，父亲本宫具生机与扶持，这是主要吉证。艮土与病宫坤土比和，不形成父亲主动克病；因此父亲有支撑，与疾病已经受制是两件事。本例无真实年命，不补算。",
+      "doctor": "天心代表医生，落乾六，临开门、九地，求医有门，但乾六逢真空、天盘地盘均入墓，施助难以充分发挥。五行方向为坤二土生乾六金，不能倒写成天心乾六金克坤二土；原局并无医生跨宫直接克制病宫的证据。",
+      "medicine": "乙奇代表医药，落兑七，临惊门、玄武，提示用药一端条件欠稳、情况尚不明朗。坤二土生兑七金，并非兑七主动克病；乙加乙「日奇伏吟」亦需结合真实格局参看。此处不能据整体吉局推断药效已见、药物已对症，更不能捏造实际治疗。",
+      "hour": "时柱甲子，时干甲代表所问事体，与父亲用神均在艮八。它可作为当下病情发展同父亲处境相连的旁证，但同一物理宫只计一次基础宫情，不得将时干与父亲当作两个不同宫位叠加助力；时干角色仍与年干角色分别记录。",
+      "chief": "值符与父亲年甲同在艮八，又临生门，是父亲本宫的有利扶持，作用归于艮八一宫。值符不在坤二病宫，且艮八、坤二均属土、两宫比和，不能把此吉神解释成已经跨宫克制病星，也不可重复算同宫基础分。",
+      "gender": "问的是男性长辈，乾六宫作辅证，父亲主用神仍是年甲艮八。乾六同时为天心医生所在宫，所见真空、双墓与开门、九地是同一组宫内条件，不能把医生与长辈辅助重复当成两个独立宫分。此处的限制应与本宫求医证据一同权衡。",
+      "verdict": "病宫坤二临死门、白虎，病势有滞碍；乾六天心受真空及双墓限制，兑七乙奇也未直接制病。另一方面，父亲年甲在艮八临生门、值符，病宫有丁奇缓和，时局见天显。综合全部已冻结的宫分、格局与有效关系，原判为极大吉（score=5）；此结论不由单一病宫吉凶决定，也不等同于医学上已证实治愈。",
+      "timing": "伏吟主慢，天显虽有助势仍难速应；驿马在寅，只作变化的候选线索。此处是抽象四柱，不具备可核定具体日期的完整冲合应期证据，故只判断进展偏缓，不编造何时康复。"
+    },
+    "professional_section_titles": {
+      "macro": "时局与变化节奏",
+      "illness": "疾病本身的阻碍",
+      "patient": "父亲自身的处境",
+      "doctor": "医生与求医条件",
+      "medicine": "药物能起多大作用",
+      "hour": "当前事情的发展",
+      "chief": "父亲得到的扶持",
+      "gender": "男性长辈的辅助判断",
+      "verdict": "综合判断",
+      "timing": "好转时间与条件"
+    },
+    "note": "2026-10-29 用户逐字确认首页示范，后续全域本关系/其他关系同质量语体但独立依据创作。第二屏保留十个中文标题并使用真实专业术语。全旧文学稿已按用户要求从main现行树下架；历史审稿SHA、证据索引和Git历史仍可追溯。本稿尚未人工批准，不进入离线iOS。冻结V8.0引擎不改，未重跑200格和跨宫5x5。",
+    "reviewer": null,
+    "approval_required": true
+  },
+  "source_provenance": {
+    "raw_record_id": "father-000001-jieqi-a",
+    "original_full_reading_sha256": "657ef2faf4bd22de827d4ce17ae58fae767fa16024165ddc746c7394391851d1",
+    "source_facts_sha256": "16ddb33de2fd9339b9b54bbef57b89216c9629495bebc8f9dfa338f6db43acfb",
+    "physical_sha256": "332d457553f78065c84261c0cfcaca961d641e9d075a6f776f07b3237fb432ae",
+    "term_only": "甲",
+    "source_v8_recomputed": false,
+    "labels_checked_against_original": true,
+    "explicit_original_roles": {
+      "illness": 2,
+      "doctor": 6,
+      "medicine": 7,
+      "patient": 8,
+      "chief": 8,
+      "gender": 6
+    },
+    "source_sections_sha256": "7a3157f3978841164279f6576b58d3daf27501e7129b8d8da1ef699e96d2f3df"
+  }
+}

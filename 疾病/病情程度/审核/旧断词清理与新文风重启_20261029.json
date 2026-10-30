@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-29",
+  "operation": "user_requested_remove_all_prior_uploaded_editorial_prose",
+  "removed_current_main_subtrees": [
+    "疾病/病情程度/盘面 (replaced with one v9 starter)",
+    "staging (removed entirely)"
+  ],
+  "disallowed_prior_versions": [
+    "v1",
+    "v2",
+    "v3",
+    "v4",
+    "v5",
+    "v6",
+    "v7",
+    "v8"
+  ],
+  "removed_tools": [
+    "unpack_father6000_v5.py",
+    "unpack_father6000_v7.py",
+    "import_father5993_bundle.py",
+    "reject_father6000_v5.py",
+    "verify_father_v7_current.py"
+  ],
+  "retained_nonprose": [
+    "疾病/病情程度/索引/",
+    "疾病/病情程度/审核/",
+    "WenguaApp source engine/BigFish/V8.0/200/81"
+  ],
+  "source_6000_workbook_sha256": "52474005292ea39c99151db1788523f9f338dfd964c0e94ad1fc66fb048472cf",
+  "source_1080_zip_sha256": "c4232ae247bbf6f9ac8d23500e99f688c6d97b5c044c2801c85dc34d12cb2922",
+  "preserved_git_history": true,
+  "new_live_draft": "疾病/病情程度/盘面/阳遁/08局/甲子/父亲/case-000001-jieqi-a.v9.json",
+  "old_6000_not_rewritten": true,
+  "approved_for_ios": 0,
+  "warning": "Deletion from main is not erasure from earlier public Git commits. Only current active literary contents have been cleared."
+}

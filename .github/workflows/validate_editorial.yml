@@ -11,12 +11,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Verify all curated draft facts and disallow draft publication
+      - name: Verify user-approved style, real source locks and draft publication gate
         run: |
           python3 -m unittest discover -s tests -v
           python3 tools/check_reader_style.py
-          python3 tools/verify_father_v7_current.py
-          python3 -m py_compile tools/build_offline_catalog.py tools/verify_imported_bigfish_sources.py tools/plan_board_groups.py tools/import_father5993_bundle.py
+          python3 -m py_compile tools/build_offline_catalog.py tools/verify_imported_bigfish_sources.py tools/plan_board_groups.py tools/render_reading_zh.py
       - name: Build zero-approved local test catalog
         run: |
           python3 tools/build_offline_catalog.py --root . --out /tmp/test_readings.sqlite

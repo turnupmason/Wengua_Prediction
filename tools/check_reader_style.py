@@ -1,49 +1,39 @@
 #!/usr/bin/env python3
-"""Release/editorial quality gate. Must not confuse unique SHA with professional prose."""
-import collections,json,pathlib,re,sys
+"""Style and source safety checks for fresh, case-specific health prose."""
+from __future__ import annotations
+import json
+import pathlib
+import re
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 BOARD=ROOT/"疾病"/"病情程度"/"盘面"
-BAN=("此局偏吉","并非病宫处处顺利","为什么这盘","先看病的这一头",
-     "代表病情的部分","几处条件合在一起","仍依原局取",
-     "首先","其次","综上所述","这盘的关键")
-CHAPTERS={"macro","illness","patient","doctor","medicine","hour","chief","gender","verdict","timing"}
+KEYS={"macro","illness","patient","doctor","medicine","hour","chief","gender","verdict","timing"}
+BAD=("生门","死门","值符","天芮","丁奇","白虎","天心","乙奇","玄武",
+     "伏吟","反吟","坤二","艮八","乾六","兑七","macro","illness",
+     "取吉","冻结结果","源力量","势待核","首先","其次","综上所述",
+     "此局偏吉","先看病的这一头","代表病情的部分")
+
 def run():
-    old=sorted(BOARD.rglob("case-*-jieqi-a.v5.json"))
-    assert len(old)==6000,("v5 missing",len(old))
+    assert not (ROOT/"staging").exists(),"obsolete staging must be removed"
+    paths=sorted(BOARD.rglob("case-*.json"))
+    assert paths,"new draft missing"
     ids=set()
-    for path in old:
-        r=json.loads(path.read_text(encoding="utf-8"))
-        n=r["source_context"]["scenario_id"]
-        assert n not in ids
-        ids.add(n)
-        assert r["editorial"]["status"]=="rejected",(path,r["editorial"]["status"])
-        assert not r["editorial"]["human_approved"]
-    assert ids==set(range(1,6001))
-    new=sorted(BOARD.rglob("case-*-jieqi-a.v6.json"))
-    assert new, "no updated professionally edited examples"
-    prefixes=collections.Counter()
-    for path in new:
-        x=json.loads(path.read_text(encoding="utf-8"))
-        n=x["source_context"]["scenario_id"]
-        p=path.with_name(path.name.replace(".v6.json",".v5.json"))
-        assert p.exists()
-        oldx=json.loads(p.read_text(encoding="utf-8"))
-        for section in ("physical_chart","source_context","fact_lock"):
-            assert x[section]==oldx[section],(n,section,"source data changed")
-        assert x["editorial"]["status"]=="draft" and x["editorial"]["human_approved"] is False
-        assert x["editorial"]["version"]==6
-        sec=x["editorial"]["professional_sections"]
-        assert set(sec)==CHAPTERS,(n,set(sec))
-        front=x["editorial"]["front_screen"]["text"]
-        assert 50<=len(front)<=220,(n,"length",len(front))
-        text="\n".join([front,*sec.values()])
-        for word in BAN:assert word not in text,(n,word)
-        assert not any(q in text for q in ["？","?"]),(n,"questions")
-        assert not re.search("甲势(?:极|大|中|小)|乙势(?:极|大|中|小)|宫象(?:极|大|中|小)",text),(n,"power narration")
-        prefixes[front[:12]]+=1
-    assert max(prefixes.values())<=2,("repeated lead",prefixes.most_common(1))
-    print(f"REJECTED v5: {len(old)}/6000; curated v6: {len(new)} PASS, no questions/banned openers, immutable evidence")
-if __name__=="__main__":
-    try:run()
-    except (AssertionError, ValueError) as ex:
-        print("EDITORIAL FAILURE",ex,file=sys.stderr);sys.exit(1)
+    for path in paths:
+        r=json.loads(path.read_text(encoding="utf-8")); e=r["editorial"]
+        assert re.fullmatch(r"case-\d{6}-jieqi-a\.v(?:9|[1-9]\d+)\.json",path.name),path
+        assert e["version"]>=9 and e["status"] in ("draft","fact_checked","reviewed","approved","rejected")
+        assert not e["human_approved"] or (e["status"]=="approved" and e.get("reviewer"))
+        assert set(e["professional_sections"])==KEYS
+        assert set(e["professional_section_titles"])==KEYS
+        assert all(len(x.strip())>=40 for x in e["professional_sections"].values())
+        assert all(any("\u4e00"<=c<="\u9fff" for c in x) for x in e["professional_section_titles"].values())
+        front=e["front_screen"]["text"]
+        assert 240<=len(front)<=1100,(path,"length",len(front))
+        assert not any(term in front for term in BAD),(path,"jargon/filler")
+        assert "？" not in front and "?" not in front
+        assert "病情" in front and "医生" in front and "药物" in front
+        assert len(r["fact_lock"]["original_evidence_sha256"])==64
+        assert len(r["fact_lock"]["original_text_sha256"])==64
+        assert r["record_id"] not in ids
+        ids.add(r["record_id"])
+    print("PASS fresh Chinese prose",len(paths),"no old drafts/staging; no internal jargon in front screen")
+if __name__=="__main__":run()
