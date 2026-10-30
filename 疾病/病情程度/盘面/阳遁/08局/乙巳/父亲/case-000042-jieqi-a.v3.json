@@ -1,0 +1,60 @@
+{
+  "schema_version": "wengua_reading_v1",
+  "record_id": "father-000042-jieqi-a-v3",
+  "physical_chart": {
+    "key": "yang-08-乙巳",
+    "direction": "yang",
+    "ju": 8,
+    "hour_ganzhi": "乙巳"
+  },
+  "source_context": {
+    "scenario_id": 42,
+    "year": "甲子",
+    "month": "丙寅",
+    "day": "丁卯",
+    "hour": "乙巳",
+    "solar_term": "立春",
+    "solar_term_branch": "a",
+    "relationship": "father",
+    "consultation_context": "direct_proxy",
+    "natal_mode": "none",
+    "abstract_scenario": true
+  },
+  "fact_lock": {
+    "original_text_sha256": "a46fe73769ac67144a6386606cae70bbdbadd0befffb701a96b91025829a9b49",
+    "original_evidence_sha256": "0951ea9749cfc55109e914afe44aee5bdbd4cc2c67dcc9f3354e9e6d60fa7a11",
+    "physical_board_sha256": "093d539424bff13d51ee21f4f08196f2034752c1d9c45c481970399cae8a2fa5",
+    "grade": "微恙",
+    "score": 0,
+    "patient_symbol": "甲",
+    "patient_source_ganzhi": "甲子",
+    "carrier_stem": "戊",
+    "patient_palace": 2,
+    "rule_engine_source": "BigFish TS 6112b3937d7fcaa2ab0a34aec2a52f74e2effe6c; workbook frozen V8 source, physical crosscheck done, numerical V8 rerun pending",
+    "source_fact_issue": []
+  },
+  "editorial": {
+    "version": 3,
+    "status": "draft",
+    "human_approved": false,
+    "front_screen": {
+      "banner": "不凶不吉",
+      "title": "微恙：病势平缓",
+      "text": "此局不宜见病宫真空就说病已退尽，也不宜因见入墓、门迫便断重病。天芮在艮八，吉凶线索交杂；父亲甲所寄坤二，有九天扶临，却也有青龙折足的不利格。天心、乙奇虽从木宫对艮土有克病方向，医药两宫自身又各带阻碍，克向未必等于克得动。整体呈两方牵制之象，因此取微恙，也就是不凶不吉。反吟仅提示局势变化偏快，并非现实病情的时间保证。"
+    },
+    "professional_sections": {
+      "macro": "本时不犯五不遇，盘逢反吟，古法取变化较快之意。然而缓急只是一层时象，不能取代病宫、人宫的吉凶辨析，更不能据此推算病情必然在几日内发生转折。",
+      "illness": "天芮落艮八，休门与六合同在，辛加戊「困龙被伤」为不利，丁加戊「青龙转光」为有利，须兼取两格。病宫同时见真空、天盘入墓与门迫：空有削弱病象的一面，墓迫却使不顺尚存。故这宫不能只凭一项条件定吉凶，更不能把真空解释为现实中已无疾病。",
+      "doctor": "天心在巽四，伤门、玄武、丙加癸「华盖孛师」并临，医生这一端有阻碍。巽木克艮土，方向上确能克病宫；但医宫自身的门神与天地格不利，因此不能把“相克”直接写成治疗已经奏效。",
+      "medicine": "乙奇在震三，生门给医药宫留下一条可取之路，白虎与乙加壬「日奇入地」却又设阻。本宫逢假空并见门迫，虽有震木克艮土之向，能否真正压病仍取决于双方具体受力。论药效，宜见有制之象而不滥言神效。",
+      "patient": "问父亲取甲子年干甲，甲子遁戊定位坤二。天任、九天与戊加丁「青龙耀明」同在，显示父亲一端有支撑；但戊加辛「青龙折足」又是一条相反证据。中五寄丁须在坤二同审，不能把另一格拆作另一宫。坤土与艮土比和，不能把两宫同类之势硬写成父亲已主动克病。",
+      "hour": "时干乙属于乙巳时的事体，正与乙奇医药同居震三。事体和医药虽各有意义，都须受震宫生门、假空和门迫约束，并非两个从不同实宫施来的独立力量。",
+      "chief": "值符在兑七，壬加乙「小蛇」带有可取之处，死门却亦在本宫。艮土生兑金，是病宫生值符所在宫，而非值符从兑金主动克艮土；可说有护持之象，不能因此断病已化解。",
+      "gender": "乾六作为男性长辈辅宫，见惊门、螣蛇、地盘入墓、驿马，癸加丙「华盖孛师」虽有可取，却难抹去辅助宫的阻力。父亲真正主用神仍在坤二，乾宫只是旁证。",
+      "verdict": "病宫真空与墓迫并存，父亲一宫吉凶两格相牵，医药两路有克向但各受门神、格局、空亡限制。此局不足以把病势说得尽退，亦不足以硬加重凶。综合取微恙，专业表达即不凶不吉，意为目前所取诸宫尚无一边倒之势；这不是医学诊断。",
+      "timing": "反吟主变，驿马在亥，乾宫又见驿马。若论具体应期，须核真实冲合、空墓与起问日时，而目前只是抽象四柱候选，不能直接报出转好或转坏的日期。"
+    },
+    "note": "首卷1080原盘核验后针对中性零分的深化断案v3；未独立V8复算，非用户人工批准；保留此前v1历史与本地v2。",
+    "reviewer": null
+  }
+}
