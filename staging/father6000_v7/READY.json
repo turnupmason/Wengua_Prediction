@@ -608,5 +608,6 @@
       "uncompressed_sha256": "8392a1c7813c4253396adfb6fe7f57bfeb4e6bc72e82add0d237c046ce1db1ca",
       "size_bytes": 54079
     }
-  ]
+  ],
+  "retry_note": "Re-run verified import after fixing escaped v7 filename regexp; original 60 shard SHA unchanged"
 }
