@@ -1,0 +1,69 @@
+{
+  "schema": "wengua_father_20261030_literary_batch_progress_v1",
+  "task": "father disease severity JieQi A independent professional prose",
+  "uploaded_source_zip": "Father.zip",
+  "uploaded_source_rows": 518400,
+  "uploaded_original_boards": 1080,
+  "original_source_text_groups": 38016,
+  "actual_written_case_ids_this_turn": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "new_individually_written_this_turn": 10,
+  "total_v9_literary_drafts_on_main": 30,
+  "total_unwritten_literary_records": 518370,
+  "first_volume_6000_unwritten": 5970,
+  "latest_written_case": 30,
+  "next_case_id": 31,
+  "approved_for_ios": 0,
+  "review_state": "draft",
+  "grouping_batch_ready": {
+    "group_count": 38016,
+    "independent_representative_case_jobs": 38016,
+    "independent_member_source_identity_mapping_count": 518400,
+    "pilot_groups_after_30": 20,
+    "pilot_independent_case_jobs_after_30": 74
+  },
+  "source_evidence_verified": {
+    "grade_score_unchanged": true,
+    "original_evidence_sha256_checked_for_new_cases": true,
+    "original_full_text_sha256_checked_for_new_cases": true,
+    "physical_1080_source_sha256_locked": true,
+    "selected_solar_term_branch": "甲",
+    "natal_mode": "none",
+    "father_annual_jia": "甲子→戊",
+    "frozen_v8_source_strength_not_rerun": true
+  },
+  "literary_quality": {
+    "first_screen": "User-approved case 000001 v9: natural clear six-role prose, normally 400–600 Chinese characters, no jargon",
+    "second_screen": "Ten distinct Chinese professional sections, real palace/stem/door/star/spirit, 81 patterns, emptiness/tombs/door suppression, actual directions and pace",
+    "banned_reader_exposure": "No score/计分/加分/冻结/源力量 or internal mechanics",
+    "no_fabricated_disease_treatment_or_calendar_date": true,
+    "no_reuse_other_case_complete_reading": true
+  },
+  "audit_failures_retained": [
+    "First new-upload CI after introducing >=35-character per expert section failed for four too-short timing chapters (22,26,27,28); these were lengthened with actual timing reasoning, not lowered threshold."
+  ],
+  "last_verified_success_ci": "https://github.com/turnupmason/Wengua_Prediction/actions/runs/41055319308",
+  "local_deliverables": {
+    "writer_script": "/mnt/data/wengua_father_literary_writer.py",
+    "source_group_jobs": "/mnt/data/father_甲_38016证据组_全量专业文学写作任务/literary_case_jobs.jsonl",
+    "all_identity_source_mapping": "/mnt/data/father_甲_518400独立来源身份索引.csv.gz",
+    "delivery_zip": "/mnt/data/Wengua_父亲518400_正式文学写作启动包_38016证据组.zip",
+    "delivery_zip_sha256": "e222d81a2c8c58bb7d68a7ac8c8af99a453519df450a0354976d4ce914d55895"
+  },
+  "status_notes": [
+    "38016 group jobs are original source evidence inputs, NOT completed manuscripts; no remote or local text model has been started by this worker.",
+    "The local writer script optionally targets a separately configured localhost OpenAI-compatible model. No model call was performed this turn.",
+    "Do not put local user original 518400 reports into the public GitHub repo. Only literary drafts and source SHA/audit appear there.",
+    "User confirmed original source data integrity; literary drafts still require independent review and human approval for iOS."
+  ]
+}
