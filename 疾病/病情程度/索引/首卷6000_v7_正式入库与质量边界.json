@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-29",
+  "scope": "father_JieQi_A_abstract_cases_000001-006000_v7",
+  "source_workbook_sha256": "52474005292ea39c99151db1788523f9f338dfd964c0e94ad1fc66fb048472cf",
+  "source_1080_zip_sha256": "c4232ae247bbf6f9ac8d23500e99f688c6d97b5c044c2801c85dc34d12cb2922",
+  "published_directory_commit": "2cc1ec90f0cb640cf16eedfddbdcee03e18bf06c",
+  "actions_run_id": 40993002914,
+  "actions_conclusion": "success",
+  "prior_actions_failure_run_id": 40992890385,
+  "prior_failure": "Importer v7 filename regex still matched escaped .v5 suffix; fixed importer and replayed; preserved failure log.",
+  "cases": 6000,
+  "physical_groups": 900,
+  "grade_counts": {
+    "极大吉": 1990,
+    "大吉": 283,
+    "中吉": 341,
+    "小吉": 303,
+    "极小吉": 341,
+    "微恙": 266,
+    "极小凶": 251,
+    "小凶": 261,
+    "中凶": 275,
+    "大凶": 246,
+    "极大凶": 1443
+  },
+  "retained_v5_rejected_cases": 6000,
+  "app_approved": 0,
+  "v7_sections_per_record": 10,
+  "v7_status": "draft",
+  "original_grades_changed": 0,
+  "original_source_facts_changed": 0,
+  "front_screen_unique_string_count": 1151,
+  "max_common_14_character_prefix_frequency": 159,
+  "front_screen_length_chars": {
+    "min": 45,
+    "median": 65,
+    "max": 84
+  },
+  "allow_natural_overlap": true,
+  "do_not_require_unique_text_sha": true,
+  "superseded_error_rule": "Do NOT flag approximately 90 records merely because illness and patient palace local auspices contrast with global grade. V8 grade derives from total score across all included palaces/sources/bonus conditions, not two hosts.",
+  "user_language_rule": "Clean, direct, short. 病宫在某宫 is acceptable and may repeat when actual physical board repeats. Explain decisive causes, patient, medicines and timing; no artificial variety and no questions.",
+  "boundaries": [
+    "v7 is program-assisted evidence-locked editorial candidate; NOT 6000 individually human-reviewed literary pieces",
+    "Frozen V8 200 energy and 5x5 source powers were not independently recalculated in this prose stage",
+    "all v7 remain drafts and not iOS release approved",
+    "no fabricated timing/patient natal/medical diagnosis"
+  ],
+  "local_delivery": {
+    "full_zip": "Wengua_父亲首卷6000_简明断案v7_全量归盘候选.zip",
+    "zip_sha256": "c29ad2857873143d3a73b0ed66bb1bfdf398b9607be741c39ef5f6ba390f8848",
+    "ten_examples": "10篇审稿全文_v7.md",
+    "first_volume_case_data": true
+  }
+}
