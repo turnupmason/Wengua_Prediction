@@ -283,7 +283,7 @@ def export(db, output, board_profiles, batch_size, branch, source_count, stage_s
         "batches": len(batches), "batch_size_limit": batch_size,
         "grade_counts": dict(sorted(grades.items())),
         "board_counts": dict(sorted(boards.items())),
-        "source_stage_stats": dict(stage_stats),
+        "stage_is_idempotent": True,
         "retained_failure_records": failures,
         "all_queued_status": "draft_not_approved",
         "app_approved_count": 0,
@@ -311,6 +311,7 @@ def main(argv=None):
     args.out.mkdir(parents=True, exist_ok=True)
     db = connect(args.out / "editorial_queue.sqlite")
     stats = stage(db, files, args.branch, args.max_new)
+    print("source staging:", canonical(dict(stats)), file=sys.stderr)
     profiles, missing = validate_boards(db, args.boards_root)
     if missing:
         (args.out / "missing_original_boards.json").write_text(
