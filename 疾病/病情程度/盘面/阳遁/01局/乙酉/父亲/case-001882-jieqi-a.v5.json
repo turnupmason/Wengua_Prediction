@@ -35,7 +35,7 @@
   },
   "editorial": {
     "version": 5,
-    "status": "draft",
+    "status": "rejected",
     "human_approved": false,
     "front_screen": {
       "banner": "凶局",
@@ -55,7 +55,9 @@
       "timing": "至于什么时候出现变化，仅凭这一组干支，不能定出一个现实日期。局中没有足以单独判断快慢的时象。原盘还见驿马在亥，表示变化这一层线索值得观察，但并不是说对应的日子必定发生什么。要具体推时，还须和空亡、入墓、冲合的触发条件以及真实问测时间一起对照；没有这些依据，便不编造某日痊愈或恶化。"
     },
     "note": "面向零基础读者：先讲为什么，再讲这盘看到什么；名字和术语仅作少量定位。不改变原分数或事实，未逐篇人工审稿，不可进入获批准iOS库。",
-    "reviewer": null
+    "reviewer": null,
+    "rejection_reason": "用户于2026-10-29明确否决全部v5：固定开头、疑问句、重复套话、冗长且不专业。该稿不得恢复为候选成品。",
+    "rejected_version_preserved": true
   },
   "source_provenance": {
     "raw_record_id": "father-001882-jieqi-a",
