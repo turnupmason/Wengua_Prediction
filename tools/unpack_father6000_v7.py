@@ -5,7 +5,7 @@ This script never promotes reviews to approved and never touches WenguaApp V8 ma
 import base64, gzip, hashlib, json, pathlib, re, sys
 
 GROUP_ROOT=pathlib.Path('staging/father6000_v7')
-PATTERN=re.compile(r'^疾病/病情程度/盘面/(阳遁|阴遁)/(0[1-9])局/(.{2})/父亲/case-(\d{6})-jieqi-a\.v5\.json$')
+PATTERN=re.compile(r'^疾病/病情程度/盘面/(阳遁|阴遁)/(0[1-9])局/(.{2})/父亲/case-(\d{6})-jieqi-a\.v7\.json$')
 SCORE={'极大吉':5,'大吉':4,'中吉':3,'小吉':2,'极小吉':1,'微恙':0,'极小凶':-1,'小凶':-2,'中凶':-3,'大凶':-4,'极大凶':-5}
 SECTIONS={'macro','illness','patient','doctor','medicine','hour','chief','gender','verdict','timing'}
 
