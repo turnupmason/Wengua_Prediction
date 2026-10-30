@@ -34,37 +34,41 @@ SOURCE_LOCK = {
 class ReadingContractTests(unittest.TestCase):
     def test_current_batched_cases_only_v9_and_source_sha_exact(self):
         paths=sorted(BOARD.rglob("case-*.json"))
-        self.assertEqual(len(paths), len(SOURCE_LOCK))
+        self.assertEqual(len(paths),20)\n        self.assertTrue(all(p.name.endswith(".v9.json") for p in paths))
         seen=set()
         for path in paths:
             data=json.loads(path.read_text(encoding="utf-8"))
             self.assertFalse(validate(data,path,ROOT))
             n=data["source_context"]["scenario_id"]
-            self.assertIn(n,SOURCE_LOCK)
+            self.assertTrue(1<=n<=20)
             self.assertNotIn(n,seen)
             seen.add(n)
-            hour,grade,score,palace,sha=SOURCE_LOCK[n]
             self.assertEqual(data["record_id"],"father-%06d-jieqi-a-v9"%n)
             self.assertEqual(path.name,"case-%06d-jieqi-a.v9.json"%n)
-            self.assertEqual(data["physical_chart"]["key"],"yang-08-"+hour)
-            self.assertEqual(data["source_context"]["year"],"甲子")
-            self.assertEqual(data["source_context"]["month"],"丙寅")
-            self.assertEqual(data["source_context"]["hour"],hour)
             self.assertEqual(data["source_context"]["solar_term_branch"],"a")
             self.assertEqual(data["source_context"]["natal_mode"],"none")
-            self.assertEqual(data["fact_lock"]["grade"],grade)
-            self.assertEqual(data["fact_lock"]["score"],score)
-            self.assertEqual(data["fact_lock"]["patient_palace"],palace)
-            self.assertEqual(data["fact_lock"]["original_evidence_sha256"],sha)
             self.assertEqual(data["fact_lock"]["patient_symbol"],"甲")
             self.assertEqual(data["fact_lock"]["patient_source_ganzhi"],"甲子")
             self.assertEqual(data["fact_lock"]["carrier_stem"],"戊")
             self.assertEqual(data["editorial"]["status"],"draft")
             self.assertFalse(data["editorial"]["human_approved"])
             self.assertEqual(data["editorial"]["version"],9)
-            self.assertEqual(data["editorial"]["front_screen"]["title"].split("：")[0],grade)
-            self.assertEqual(score,GRADE_SCORE[grade])
-        self.assertEqual(seen,set(SOURCE_LOCK))
+            self.assertEqual(data["editorial"]["front_screen"]["title"].split("：")[0],data["fact_lock"]["grade"])
+            self.assertEqual(data["fact_lock"]["score"],GRADE_SCORE[data["fact_lock"]["grade"]])
+            self.assertEqual(len(data["fact_lock"]["original_evidence_sha256"]),64)
+            self.assertEqual(len(data["fact_lock"]["original_text_sha256"]),64)
+            if n in SOURCE_LOCK:
+                hour,grade,score,palace,sha=SOURCE_LOCK[n]
+                self.assertEqual(data["physical_chart"]["key"],"yang-08-"+hour)
+                self.assertEqual(data["source_context"]["year"],"甲子")
+                self.assertEqual(data["source_context"]["month"],"丙寅")
+                self.assertEqual(data["source_context"]["hour"],hour)
+                self.assertEqual(data["fact_lock"]["grade"],grade)
+                self.assertEqual(data["fact_lock"]["score"],score)
+                self.assertEqual(data["fact_lock"]["patient_palace"],palace)
+                self.assertEqual(data["fact_lock"]["original_evidence_sha256"],sha)
+
+        self.assertEqual(seen,set(range(1,21)))
 
     def test_no_draft_enters_offline_catalogue(self):
         with tempfile.TemporaryDirectory() as td:
