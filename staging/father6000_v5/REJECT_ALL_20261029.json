@@ -1,0 +1,10 @@
+{
+  "schema": "wengua_editorial_batch_rejection_v1",
+  "batch": "father_000001-006000",
+  "branch": "jieqi_a",
+  "version": 5,
+  "rejected_case_count": 6000,
+  "reason": "用户明确否决重复开头、假设问句、空泛解释、冗长假专业。禁止直接上线或重新标为合格。",
+  "frozen_facts_unchanged": true,
+  "approved": 0
+}
