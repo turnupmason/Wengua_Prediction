@@ -195,3 +195,6 @@ v7已实际完成6000条（节气甲、父亲年甲子→戊定位、乾六辅�
 
 ## 2026-10-30 最新：已实际交付来源逐字校验v7，本地运行新Qwen尚待验收
 用户最新“开始弄”指继续修复Archive(2).zip中的5组真实文学失败，而不是重新起盘/新建项目或更改JSON格式。完成Mac+RTX4090原v6工具增量升级v7：增加 `wengua_evidence_editor_v7.py`，把原始十章逐字证据、五行方向、81双天地格、病星外泄与主辅同宫整理成完整本案因果；首屏只写有依据的人话，专业十章逐章真实转述；审稿器只承认严格引用原始十章的具体错误，其他列待核或误报。source SHA、物理board SHA、冻结V8评分、前30篇已批准文学稿及旧失败原稿保护不动。真实用户原Father.zip首卷6000、1080 BigFish盘上32 tests PASS，双机mock写12复审12，v6五份失败被拒绝；新真实Qwen v7文字还没有在用户Mac生成，绝不能说质量已通过。用户可下载ZIP `Wengua_Mac4090_原文证据审稿_因果断词v7_20261030.zip` SHA256 `e8d7aad325b1e634fe352257793e31313f6c0a4f9fb3206b429ec8beadd7b3ba`；覆盖原Python脚本并新增v7模块，无需重新导入SQLite；执行 `python3 wengua_mac_batch.py write --model qwen3:14b --limit 5 --retry --repair-attempts 1`，再 `audit`，有4090后 `review-dual --limit 5`、`pilot-evaluate`，交给ChatGPT逐篇真人文风评审，合格才试35B小批。详情见 `疾病/病情程度/审核/Qwen14B_v6五篇失败后的原文证据编辑v7_模型审稿误报修复_20261030.md`。未经明确人工批准0新稿入iOS。
+
+## 2026-10-31 · 用户停止Qwen、恢复GPT逐篇精修，已写31–40篇
+实际从Father.zip与1080(1).zip读取父亲节气甲第31–40个独立来源，GPT逐案写出6段通俗首屏及10章专业第二屏，原等级、评分、年甲用神、盘SHA和证据SHA全锁。每篇为v9 draft/human_approved=false，不改批准的1–30篇，不入离线iOS，冻结V8/200/81/Swift不动；用户完成本批之后将另告新想法。新增专门审稿记录 疾病/病情程度/审核/GPT人工文学精修_父亲节气甲第31至40篇_20261031.md。tests/test_catalog.py仅把未批准草稿纳入检验范围，现有30篇签审字节锁与离线30条门槛仍保留。

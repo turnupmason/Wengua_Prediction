@@ -1,0 +1,84 @@
+{
+  "schema_version": "wengua_reading_v1",
+  "record_id": "father-000035-jieqi-a-v9",
+  "physical_chart": {
+    "key": "yang-08-戊戌",
+    "direction": "yang",
+    "ju": 8,
+    "hour_ganzhi": "戊戌"
+  },
+  "source_context": {
+    "scenario_id": 35,
+    "year": "甲子",
+    "month": "丙寅",
+    "day": "丙寅",
+    "hour": "戊戌",
+    "solar_term": "立春",
+    "solar_term_branch": "a",
+    "relationship": "father",
+    "consultation_context": "direct_proxy",
+    "natal_mode": "none",
+    "abstract_scenario": true
+  },
+  "fact_lock": {
+    "original_text_sha256": "8370184511489ec3f134c4da1d34362ee5df85964448241f2f56850084fd5af1",
+    "original_evidence_sha256": "494c7ff671a7c1ff9afa412f0cab0ddb2ec7bf07d43530f1edf8e2f44cf15cc3",
+    "grade": "极大凶",
+    "score": -5,
+    "patient_symbol": "甲",
+    "patient_source_ganzhi": "甲子",
+    "carrier_stem": "戊",
+    "patient_palace": 2,
+    "rule_engine_source": "BigFish original 1080 physical board + uploaded Father.zip frozen V8; original math not rerun",
+    "source_fact_issue": [],
+    "physical_board_sha256": "6bab5085e971289909c2f0477016c897a86f1f35fa9eac099ae34763855478c3"
+  },
+  "editorial": {
+    "version": 9,
+    "status": "draft",
+    "human_approved": false,
+    "front_screen": {
+      "banner": "凶局",
+      "title": "极大凶：命悬一线",
+      "text": "这局最值得警惕的，不是病情所在之处没有好条件，而是父亲自身处境明显受损。病宫虽有吉神与缓和因素，父亲却难以充分承接这些好处；因此全局并未因局部有吉而转好，仍属极大凶。\n\n父亲所在的位置受凶神干扰，通路又有破损，代表他的自身力量在这局也不足。父亲与疾病处在五行相同的关系中，没有直接压制病势的作用。即使其他地方出现有利迹象，这一处的受困仍然是决定全局的重要不利。\n\n疾病所在之处确实有吉神护持，也有缓和病势的条件，不能把这一面抹掉。不过，那里同时有入墓和凶格，说明病势仍有牵绊。病宫局部较吉，与父亲能够否承受病情是两回事，不能因为前者便改变整个局的判断。\n\n医生和药物各有制约疾病的方向，是这盘仍可见到的转机；但医生一侧受空亡与阻塞牵制，药物一侧则被凶神、凶格拖累。方向上能够克病，不代表现实中已经发挥作用，实际能否缓解病势仍须保留判断余地。\n\n当前发展的线索与父亲落在同一处，意味着这件事的进退紧随父亲自身的艰难处境。护持的吉神则与疾病同在另一处，并不直接落在父亲身边。男性长辈的辅助位置也有入墓、停滞的限制，难成强援。\n\n因此，局中虽有病宫吉象和医药可克病的方向，父亲受困、力量不足及其他不利仍占上风，原判极大凶不变。事情变化可能较快，却不能由此指定恶化或康复的日期。"
+    },
+    "professional_sections": {
+      "macro": "立春甲候选，丙寅日戊戌时，不犯五不遇，反吟主快。大凶的总体判断与变动节奏须分开：反吟只说变化可能较急，不替代病情程度的原定判断。",
+      "illness": "天芮落艮八，开门、值符与天盘丁奇提供缓和病象的条件；辛加戊「困龙被伤」属凶，丁加戊「青龙转光」属吉。天盘入墓又带来困阻。病宫局部虽偏吉，不足以推翻全盘极大凶。",
+      "patient": "父亲年甲甲子遁戊在坤二，天任、杜门与白虎并临，戊加辛「青龙折足」凶、戊加丁「青龙耀明」吉，两组格局因中五寄坤而并存。又见门破，父亲宫总体受损；自身自身力量弱，与艮八病宫比和，无法主动克病。无实际年命。",
+      "doctor": "天心在巽四，虽临生门太阴，丙加癸「华盖孛师」凶，又见假空和门迫。巽木克艮土具制病方向，但天心施力偏弱且宫内受限，不能确定已有效制病。",
+      "medicine": "乙奇在震三，休门有利而螣蛇及乙加壬「日奇入地」不利。震木克艮土有克病方向，源力虽有，却未核定实际克病效力，不可写成药物已见效。",
+      "hour": "戊戌时干与父亲用神同在坤二，事体和父亲所受门破、白虎及两格相互关联。这不等于另有一处独立宫位增强父亲。",
+      "chief": "值符在艮八天芮病宫，不在坤二父亲宫；它和丁奇可作病宫缓和条件，仍须与天芮入墓及辛加戊凶格合断。",
+      "gender": "男长辈乾六临死门、九地，癸加丙「华盖孛师」虽吉，地盘入墓限制其作用；乾金受艮土所生，不主动克病。这份辅助不足以代替父亲主用神。",
+      "verdict": "艮八病宫见值符、丁奇却仍受入墓凶格；父亲坤二门破白虎、自身自身力量不足，医药虽有克病方向而效力未明，乾六辅助受限。原定总局取极大凶，不能以病宫局部较吉翻案。",
+      "timing": "反吟提示节奏偏急，驿马在申，父亲坤二另见驿马。源报告未提供完整冲合应期，不能据此推定具体恶化时间。"
+    },
+    "professional_section_titles": {
+      "macro": "时局与变化节奏",
+      "illness": "疾病本身的阻碍",
+      "patient": "父亲自身的处境",
+      "doctor": "医生与求医条件",
+      "medicine": "药物能起多大作用",
+      "hour": "当前事情的发展",
+      "chief": "父亲得到的扶持",
+      "gender": "男性长辈的辅助判断",
+      "verdict": "综合判断",
+      "timing": "好转时间与条件"
+    },
+    "note": "接续用户已批准的前30篇v9文学稿，由GPT按原始Excel节气甲与实盘逐案润色。当前仅文学候选，用户未批准，不入离线iOS；V8/200/81计算及物理盘均未重算或修改。",
+    "reviewer": null,
+    "approval_required": true
+  },
+  "source_provenance": {
+    "raw_record_id": "father-000035-jieqi-a",
+    "original_full_reading_sha256": "8370184511489ec3f134c4da1d34362ee5df85964448241f2f56850084fd5af1",
+    "source_facts_sha256": "494c7ff671a7c1ff9afa412f0cab0ddb2ec7bf07d43530f1edf8e2f44cf15cc3",
+    "term_only": "甲",
+    "source_v8_recomputed": false,
+    "labels_checked_against_original": true,
+    "source_workbook": "father_000001-006000.xlsx",
+    "physical_sha256": "6bab5085e971289909c2f0477016c897a86f1f35fa9eac099ae34763855478c3",
+    "source_original_sections_sha256": "8370184511489ec3f134c4da1d34362ee5df85964448241f2f56850084fd5af1"
+  }
+}

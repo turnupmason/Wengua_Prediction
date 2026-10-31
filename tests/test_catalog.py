@@ -30,11 +30,14 @@ SOURCE_LOCK = {
   11:("甲戌","极大吉",5,8,"b7c97337743ebab79669adc5584d09ec93811140378dc25339ded85bd103f5a7"),
 }
 
+# New v9 GPT literary drafts retain exact source identity, still require human approval.
+SOURCE_LOCK.update({'31':['甲午','极大吉',5,8,'dd298e24f6541b4a0d1692d6fb2dee6b58e5e38afdb3ca6ea674e500aee692e7'],'32':['乙未','大吉',4,3,'317021a2912421204eaff26277810769a4e1eee73886fbdca0d587c8c6b35e11'],'33':['丙申','极大吉',5,4,'21a31bd5ae6c31c73e9f2cb3eca0dedfdd6719de71ad89dcdbec34bdf0b5a58a'],'34':['丁酉','极大吉',5,8,'30c5f2d65f1189912e3e299aff10078eb389045a1e3c9aaaf4b63c227f423b64'],'35':['戊戌','极大凶',-5,2,'494c7ff671a7c1ff9afa412f0cab0ddb2ec7bf07d43530f1edf8e2f44cf15cc3'],'36':['己亥','极大凶',-5,1,'a527b83cbb57f3400100c55bbbd845011f97a5d0a32482f98119b3b387b30af7'],'37':['庚子','极大凶',-5,9,'28738ffe12f099cda5eda5365703617e93dd64c5dce2f2a24e4e1149c0f3de35'],'38':['辛丑','极大吉',5,8,'635bfbaf9d343e476dcfff4d32ebcc0990bb9351162fcb732876c290345fbe91'],'39':['壬寅','大吉',4,7,'76379feb593cc2b0a9497a1f849cf1dfeddb02cb415b8282d2a52aee811febe1'],'40':['癸卯','小吉',2,6,'1f2c838d1bbcce05e6510ba2fbf99277b5c90492bc20c695ccab348eebb5def6']})
+
 
 class ReadingContractTests(unittest.TestCase):
     def test_current_batched_cases_only_v9_and_source_sha_exact(self):
         paths=sorted(BOARD.rglob("case-*.json"))
-        self.assertGreaterEqual(len(paths),25)
+        self.assertGreaterEqual(len(paths),40)
         self.assertTrue(all(p.name.endswith(".v9.json") for p in paths))
         seen=set()
         for path in paths:
@@ -51,9 +54,14 @@ class ReadingContractTests(unittest.TestCase):
             self.assertEqual(data["fact_lock"]["patient_symbol"],"甲")
             self.assertEqual(data["fact_lock"]["patient_source_ganzhi"],"甲子")
             self.assertEqual(data["fact_lock"]["carrier_stem"],"戊")
-            self.assertEqual(data["editorial"]["status"],"approved")
-            self.assertTrue(data["editorial"]["human_approved"])
-            self.assertEqual(data["editorial"]["reviewer"],"user_explicit_approval_2026-10-30")
+            if n <= 30:
+                self.assertEqual(data["editorial"]["status"], "approved")
+                self.assertTrue(data["editorial"]["human_approved"])
+                self.assertEqual(data["editorial"]["reviewer"], "user_explicit_approval_2026-10-30")
+            else:
+                self.assertIn(data["editorial"]["status"], ("draft", "fact_checked", "reviewed"))
+                self.assertFalse(data["editorial"]["human_approved"])
+                self.assertIsNone(data["editorial"].get("reviewer"))
             self.assertEqual(data["editorial"]["version"],9)
             self.assertEqual(data["editorial"]["front_screen"]["title"].split("：")[0],data["fact_lock"]["grade"])
             self.assertEqual(data["fact_lock"]["score"],GRADE_SCORE[data["fact_lock"]["grade"]])
@@ -70,7 +78,7 @@ class ReadingContractTests(unittest.TestCase):
                 self.assertEqual(data["fact_lock"]["patient_palace"],palace)
                 self.assertEqual(data["fact_lock"]["original_evidence_sha256"],sha)
 
-        self.assertTrue(set(range(1,26)).issubset(seen))
+        self.assertTrue(set(range(1,41)).issubset(seen))
 
     def test_only_30_explicitly_approved_readings_enter_offline_catalogue(self):
         with tempfile.TemporaryDirectory() as td:
