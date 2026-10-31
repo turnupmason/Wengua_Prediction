@@ -1,0 +1,84 @@
+{
+  "schema_version": "wengua_reading_v1",
+  "record_id": "father-000069-jieqi-a-v9",
+  "physical_chart": {
+    "key": "yang-05-壬申",
+    "direction": "yang",
+    "ju": 5,
+    "hour_ganzhi": "壬申"
+  },
+  "source_context": {
+    "scenario_id": 69,
+    "year": "甲子",
+    "month": "丙寅",
+    "day": "己巳",
+    "hour": "壬申",
+    "solar_term": "立春",
+    "solar_term_branch": "a",
+    "relationship": "father",
+    "consultation_context": "direct_proxy",
+    "natal_mode": "none",
+    "abstract_scenario": true
+  },
+  "fact_lock": {
+    "original_text_sha256": "decfd86c320f5e2309f824f87913f9f64214167e1f356e8b1dbec652ffe67247",
+    "original_evidence_sha256": "8ec134f1821d91832ad7b3ec92086ddba0a6c451adf686a13737086db43a6f53",
+    "grade": "极大吉",
+    "score": 5,
+    "patient_symbol": "甲",
+    "patient_source_ganzhi": "甲子",
+    "carrier_stem": "戊",
+    "patient_palace": 9,
+    "rule_engine_source": "original 1080 BigFish board, uploaded Father.zip frozen V8 report; original mathematics never rerun",
+    "source_fact_issue": [],
+    "physical_board_sha256": "c03c165550eda4ee4b5401b5157ceaabd66ecd14548a19be2a1d0ff91e38ca89"
+  },
+  "editorial": {
+    "version": 9,
+    "status": "draft",
+    "human_approved": false,
+    "front_screen": {
+      "banner": "吉局",
+      "title": "极大吉：沉疴顿愈",
+      "text": "眼前虽然吉凶并见，合看父亲此病仍是全盘的吉意非常突出。父亲、疾病和护持吉神同落一处，病势虽有阻碍，但缓和病势的条件扶助存在；医药的生扶方向不能误说成制病。\n\n父亲所在之处恰是病情一端，论吉凶尤其不宜把病人与病势割裂。此处有利也有牵制。人在这里得到的帮助与病星所受阻力共用一处环境，不能写成两宫互相压制。\n\n病星自身还有必须交代的依据。一吉一凶的两组格局同时出现，吉中有碍。护持吉神也在病情一端，能缓和这里的困难。\n\n医生这一边反受病势制约，助力难以完全展开，也有自己的可用条件；药物这一边对病势反呈生扶，不应当作克病之证，也有自己的可用条件。两端虽都参与全局判断，真正的诊疗结果仍需医学检查确认。\n\n当前事情另有自己的落处，其助阻不能挪作父亲或病宫已有的条件。护持吉神也在这一处，扶持的是人与病共同的宫位；男性长辈还需从其辅助位置审看，不能代替父亲的年干主用神。\n\n把父亲、病势与医药所见合在一起，局部困阻未能抵消全局的极大吉之势。局中尚缺足以单断快慢的整盘依据。具体哪一天出现转折，眼前缺乏足以定日的冲合依据，不作臆测。"
+    },
+    "professional_sections": {
+      "macro": "立春甲候选、己巳日壬申时，不犯五不遇时；未见整盘伏吟反吟，不能因此武断病程必快必慢。此章只审宏观时局，不代替病宫与父亲的实际综合判定。",
+      "illness": "天芮在离九，临惊门、值符。天地盘丁加壬「五神互合」（吉）、戊加壬「龙入天牢」（凶），两格均需分别审视；一吉一凶，不能只报其中一格。又见门迫，须辨其对病象和扶持的限制。值符恰与天芮同宫，其吉助属于病宫环境，不能误写成父亲另得同宫扶持。",
+      "patient": "父亲以问测年干甲为主用神，甲子遁戊只用于在盘上定位，实际在离九；不使用真实出生年命。年甲与天芮同宫，人的处境和病势环境须合看，不能虚构两个不同实宫之间的生克。宫内吉凶与年甲的真实施受力量不是同一指标。",
+      "doctor": "天心代表医生，在兑七，配休门、太阴。天地格己加庚「刑格」（凶）；与病宫的实际关系是受到病宫反向制约，所以医生一端的盘面吉凶不能直接翻译成已经成功治疗。",
+      "medicine": "乙奇为医药用神，落震三，与景门、九地同参。天地格乙加丙「奇仪顺生」（吉）。乙奇与病宫的方向为：生扶病宫，不能写作压制病势。此处讲的是传统宫象关系，不新增具体药名、治疗方法或疗效结论。",
+      "hour": "壬申时的时干代表事体，实落巽四。此宫另有自己星门神与天地格，需独立审其对病宫的真实生克。本宫见死门、九天，并须顾及本宫实有的空墓刑迫。时干只表示所问事情当前的发展线索，既不替代父亲年甲，也不能据此新增现实治疗事实。",
+      "chief": "值符在离九，代表该实宫的护持条件。同时与天芮、父亲年甲同宫，这份扶持属于共同的真实宫位，不可拆成两处。值符的吉意要从实际落宫和跨宫关系解释，不可脱离原始盘面。",
+      "gender": "父亲为男性长辈，辅助观察乾六；主用神仍是问测年干甲，乾宫不是另一个出生年命。乾六另有其自身星门格局与空墓刑迫，不得空称一位强援。本宫所见真空不可略。与生门、六合的组合一并审看。",
+      "verdict": "天芮病宫在离九，临惊门、值符；父亲年甲在离九，主审其自身承受与支撑。二者同宫，人病所处环境一致，没有虚构两处宫位相互施克的余地。值符在病宫，此吉助应归病宫而非另外迁往父亲宫。天心在兑七，受到病宫反向制约；乙奇在震三，生扶病宫，不能写作压制病势。本案取舍关键在于：病宫与父亲同处离九，病宫有丁奇与值符，医药一方却生扶病宫，整体吉断不能归为药已制病。据冻结原始综合判断，等级为极大吉。局部有吉或凶，均不可取代全盘；这是古籍盘象的文字研判，不是现实临床诊断。",
+      "timing": "无整盘反伏吟作为快慢定论的充分基础。驿马在寅，只作动象及候选时间支线。原始材料未提供充分完整的冲合、填实、出墓等应期证据，不指定公历康复日，也不臆断真实病程。"
+    },
+    "professional_section_titles": {
+      "macro": "时局与变化节奏",
+      "illness": "疾病本身的阻碍",
+      "patient": "父亲自身的处境",
+      "doctor": "医生与求医条件",
+      "medicine": "药物能起多大作用",
+      "hour": "当前事情的发展",
+      "chief": "父亲得到的扶持",
+      "gender": "男性长辈的辅助判断",
+      "verdict": "综合判断",
+      "timing": "好转时间与条件"
+    },
+    "note": "原始十章、宫位、原等级和证据SHA只读；从真实证据逐案润色，原文并非医学诊断；外部古籍仅作解释取象，不进入V8数学。",
+    "reviewer": null,
+    "approval_required": true
+  },
+  "source_provenance": {
+    "raw_record_id": "father-000069-jieqi-a",
+    "original_full_reading_sha256": "decfd86c320f5e2309f824f87913f9f64214167e1f356e8b1dbec652ffe67247",
+    "source_facts_sha256": "8ec134f1821d91832ad7b3ec92086ddba0a6c451adf686a13737086db43a6f53",
+    "term_only": "甲",
+    "source_v8_recomputed": false,
+    "labels_checked_against_original": true,
+    "source_workbook": "father_000001-006000.xlsx",
+    "physical_sha256": "c03c165550eda4ee4b5401b5157ceaabd66ecd14548a19be2a1d0ff91e38ca89",
+    "source_original_sections_sha256": "decfd86c320f5e2309f824f87913f9f64214167e1f356e8b1dbec652ffe67247"
+  }
+}
